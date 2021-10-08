@@ -11,10 +11,32 @@ a {
 }
 
 body {
-    background-color: #efefef;
     color: #38394f;
     text-align: center;
     padding: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.image {
+    flex-basis: 80%;
+}
+
+.text {
+    padding-left: 20px;
+    text-align: left;
 }
