@@ -294,7 +294,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #121628;
 }
 
 .section-title h2::after {
@@ -459,13 +459,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #d86e44;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #fdf2f1;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
