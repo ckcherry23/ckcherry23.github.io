@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.handwritten {
+  font-family: "Patrick Hand", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -123,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 300px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 11990px) {
   #header {
     left: -300px;
   }
@@ -179,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  left: 15px;
   top: 15px;
   z-index: 9998;
   border: 0;
@@ -239,6 +243,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+}
+
+#hero h2 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 56px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #hero p {
@@ -1047,10 +1059,9 @@ section {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
-  width: 300px;
   z-index: 9999;
   background: #121628;
 }
@@ -1066,10 +1077,11 @@ section {
   color: #eaebf0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   #footer {
     position: static;
-    width: auto;
+    left: 0px;
+    bottom: 0px;
     padding-right: 20px 15px;
   }
 }
