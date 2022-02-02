@@ -9,12 +9,16 @@
 # General
 --------------------------------------------------------------*/
 // $primary: rgb(235, 160, 130);
-$primary: rgb(216, 110, 68);
-$navbar:rgb(18, 22, 40); 
-$icons: rgb(216, 110, 68);
-$lightBg: rgb(253, 242, 241);
-// $hero-bg: url("../img/hero-bg.jpg");
-$hero-bg: url("../vid/hero-bg.mp4");
+// $primary: rgb(216, 110, 68);
+// $navbar:rgb(18, 22, 40); 
+// $icons: rgb(216, 110, 68);
+// $lightBg: rgb(253, 242, 241);
+$primary: #03738C;
+$navbar: #012840;
+$icons: #00C9DB;
+$lightBg: #EFFDF3;
+$green: #A6D95B;
+$hero-bg: url("../img/hero-bg.png");
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -22,12 +26,12 @@ body {
 }
 
 a {
-  color: $primary;
+  color: $icons;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: $primary;
   text-decoration: none;
 }
 
@@ -186,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: $primary;
+  background-color: $icons;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -211,8 +215,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: $hero-bg top center;
-  background-size: cover;
 }
 #background-video {
   width: 100vw;
@@ -224,6 +226,15 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+@media (max-width: 750px) {
+  #background-video { display: none; }
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: $hero-bg top center;
+    background-size: cover;
+  }
 }
 #hero:before {
   content: "";
@@ -250,9 +261,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero h2 {
   color: #fff;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 64px;
   padding-left: 100px;
   padding-right: 100px;
+}
+#hero h2 span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid $green;
 }
 #hero p {
   color: #fff;
@@ -273,13 +290,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 36px;
   }
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 44px;
     margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -418,7 +437,7 @@ section {
   font-style: normal;
 }
 .skills .progress-bar-wrap {
-  background: #f8e2dc;
+  background: $lightBg;
   height: 10px;
 }
 .skills .progress-bar {
