@@ -10,6 +10,19 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  font-size: 24px;
+}
+
+@media (max-width: 750px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    font-size: 20px;
+  }
+}
+mark {
+  background-color: rgba(68, 171, 189, 0.5);
+  color: white;
 }
 
 a {
@@ -118,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #EFFDF3;
+  background: #EFFBFE;
   color: #000;
   text-decoration: none;
 }
@@ -191,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #00C9DB;
+  background-color: #03738C;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -268,10 +281,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+#hero h1 span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #00C9DB;
+}
+
 #hero h2 {
   color: #fff;
   font-size: 48px;
-  line-height: 64px;
+  line-height: 96px;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -280,7 +300,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #A6D95B;
 }
 
 #hero p {
@@ -310,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #hero h2 {
     font-size: 28px;
-    line-height: 44px;
+    line-height: 58px;
     margin-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -325,7 +344,7 @@ section {
 }
 
 .section-bg {
-  background: #EFFDF3;
+  background: #EFFBFE;
 }
 
 .section-title {
@@ -395,6 +414,7 @@ section {
 # Facts
 --------------------------------------------------------------*/
 .facts {
+  visibility: collapse;
   padding-bottom: 30px;
 }
 
@@ -443,8 +463,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
+.skills {
+  visibility: collapse;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -468,7 +492,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #EFFDF3;
+  background: #EFFBFE;
   height: 10px;
 }
 
@@ -482,6 +506,10 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume {
+  visibility: collapse;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -509,7 +537,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #EFFDF3;
+  background: #EFFBFE;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -708,6 +736,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  visibility: collapse;
+}
+
 .services .icon-box {
   margin-bottom: 20px;
 }
@@ -763,6 +795,10 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  visibility: collapse;
+}
+
 .testimonials .testimonials-carousel, .testimonials .testimonials-slider {
   overflow: hidden;
 }
