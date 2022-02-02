@@ -13,6 +13,8 @@ $primary: rgb(216, 110, 68);
 $navbar:rgb(18, 22, 40); 
 $icons: rgb(216, 110, 68);
 $lightBg: rgb(253, 242, 241);
+// $hero-bg: url("../img/hero-bg.jpg");
+$hero-bg: url("../vid/hero-bg.mp4");
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -124,6 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   margin-left: 300px;
+  background-color: #fff;
 }
 
 @media (max-width: 11990px) {
@@ -208,8 +211,19 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: $hero-bg top center;
   background-size: cover;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 #hero:before {
   content: "";
