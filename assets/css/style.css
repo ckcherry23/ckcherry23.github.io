@@ -419,9 +419,8 @@ section {
   transition: all 0.4s ease;
 }
 
-#tv:hover {
-  border-radius: 0% 0% 50% 50%/0% 0% 5% 5%;
-  box-shadow: 10px 10px rgba(27, 221, 235, 0.5);
+.about #tv:hover {
+  box-shadow: 10px 10px rgba(8, 149, 173, 0.687);
 }
 
 /*--------------------------------------------------------------
