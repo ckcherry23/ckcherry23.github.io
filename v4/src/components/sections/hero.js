@@ -18,7 +18,7 @@ const StyledHeroSection = styled.section`
 
   h1 {
     margin: 0 0 30px 4px;
-    color: var(--green);
+    color: var(--rose);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
@@ -59,7 +59,7 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
+  const two = <h2 className="big-heading">Charisma Kausar.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <>
@@ -68,7 +68,7 @@ const Hero = () => {
         digital experiences. Currently, I’m focused on building accessible, human-centered products
         at{' '}
         <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+          Makino Asia
         </a>
         .
       </p>
