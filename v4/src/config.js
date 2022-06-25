@@ -7,20 +7,20 @@ module.exports = {
       url: 'https://github.com/ckcherry23',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/charismakausar',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/charisma-kausar',
+    },
+    {
+      name: 'Medium',
+      url: 'https://medium.com/@charismakausar',
     },
     {
       name: 'Twitter',
       url: 'https://twitter.com/ckcherry23',
     },
     {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/charisma-kausar',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/ckcherry23',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/charismakausar',
     },
   ],
 

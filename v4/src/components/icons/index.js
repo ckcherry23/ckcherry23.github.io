@@ -10,6 +10,7 @@ export { default as IconInstagram } from './instagram';
 export { default as IconLinkedin } from './linkedin';
 export { default as IconLoader } from './loader';
 export { default as IconLogo } from './logo';
+export { default as IconMedium } from './medium';
 export { default as IconPlayStore } from './playstore';
 export { default as IconStar } from './star';
 export { default as IconTwitter } from './twitter';
