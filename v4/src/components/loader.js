@@ -7,33 +7,38 @@ import { IconLoader } from '@components/icons';
 
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark-navy);
-  z-index: 99;
-
-  .logo-wrapper {
-    width: max-content;
-    max-width: 100px;
-    transition: var(--transition);
-    opacity: ${props => (props.isMounted ? 1 : 0)};
-    svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      fill: none;
-      user-select: none;
-      #B {
-        opacity: 0;
-      }
+  /* Google chrome */
+  @-webkit-keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+      fill: transparent;
     }
-  }
+    60% {
+      stroke-dashoffset: 0;
+      fill: var(--rose);
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: var(--rose);
+    }
+    
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: var(--rose);
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: var(--rose);
+    }
+    
+}
 `;
 
 const Loader = ({ finishLoading }) => {
@@ -77,6 +82,7 @@ const Loader = ({ finishLoading }) => {
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsMounted(true), 10);
+    setTextAnimation(0.1,3.0,1,'linear','#eeaaaa',false);
     animate();
     return () => clearTimeout(timeout);
   }, []);
@@ -95,5 +101,21 @@ const Loader = ({ finishLoading }) => {
 Loader.propTypes = {
   finishLoading: PropTypes.func.isRequired,
 };
+
+
+function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
+  let paths = document.querySelectorAll("path");
+  let mode=repeat?'infinite':'forwards'
+  for (let i = 0; i < paths.length; i++) {
+      const path = paths[i];
+      const length = path.getTotalLength();
+      path.style["stroke-dashoffset"] = `${length}px`;
+      path.style["stroke-dasharray"] = `${length}px`;
+      path.style["stroke-width"] = `${strokeWidth}px`;
+      path.style["stroke"] = `${strokeColor}`;
+      path.style["animation"] = `${duration}s svg-text-anim ${mode} ${timingFunction}`;
+      path.style["animation-delay"] = `${i * delay}s`;
+  }
+}
 
 export default Loader;
