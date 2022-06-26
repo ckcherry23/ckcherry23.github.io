@@ -39,12 +39,18 @@ const StyledHeroSection = styled.section`
     max-width: 540px;
   }
 
+  div {
+    display: flex;
+    align-items: end;
+  }
+
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
 
   .wave {
+    font-size: 4vw;
     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s;        /* Change to speed up or slow down */
     animation-iteration-count: infinite;  /* Never stop waving :) */
@@ -77,9 +83,9 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1><span class="wave">👋🏼</span> Hi there! I'm</h1>;
+  const one = <div className="row"><span class="wave">👋🏼</span><h1>&emsp;Hi there! I'm</h1></div>;
   const two = <h2 className="big-heading">Charisma Kausar.</h2>;
-  const three = <h3 className="big-heading">I create human-centered software.</h3>;
+  const three = <h3 className="big-heading">I create human-centered apps.</h3>;
   const four = (
     <>
       <p>
@@ -87,7 +93,7 @@ const Hero = () => {
         <a href="https://www.nus.edu.sg/" target="_blank" rel="noreferrer">
           NUS
         </a>
-        . Currently, I'm a software engineer building accessible, human-centered products for monitoring machines
+        . Currently, I'm a Software Engineering Intern building accessible, customer-focussed products for monitoring machines
         at {' '}
         <a href="https://www.makino.com.sg/machine-technology/software-digital" target="_blank" rel="noreferrer">
           Makino Asia
@@ -99,10 +105,10 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://www.linkedin.com/in/charisma-kausar/"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Connect with me on LinkedIn!
     </a>
   );
 
