@@ -51,10 +51,10 @@ const StyledHeroSection = styled.section`
 
   .wave {
     font-size: 4vw;
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;  
+    animation-duration: 3s;       
+    animation-iteration-count: 1;  
+    transform-origin: 70% 70%;      
     display: inline-block;
   }
   
@@ -83,7 +83,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <div className="row"><span class="wave">👋🏼</span><h1>&emsp;Hi there! I'm</h1></div>;
+  const one = <div className="row"><span className="wave">👋🏼</span><h1>&emsp;Hi there! I'm</h1></div>;
   const two = <h2 className="big-heading">Charisma Kausar.</h2>;
   const three = <h3 className="big-heading">I create human-centered apps.</h3>;
   const four = (
