@@ -6,11 +6,13 @@ import {
   IconCodepen,
   IconCPlusPlus,
   IconCSharp,
+  IconCss,
   IconDart,
   IconExternal,
   IconFolder,
   IconFork,
   IconGitHub,
+  IconHtml,
   IconInstagram,
   IconJava,
   IconJavaScript,
@@ -36,6 +38,8 @@ const Icon = ({ name }) => {
       return <IconCPlusPlus />;
     case 'C#':
       return <IconCSharp />;
+    case 'CSS':
+      return <IconCss />;
     case 'Dart':
       return <IconDart />;
     case 'External':
@@ -46,6 +50,8 @@ const Icon = ({ name }) => {
       return <IconFork />;
     case 'GitHub':
       return <IconGitHub />;
+    case 'HTML':
+      return <IconHtml />;
     case 'Instagram':
       return <IconInstagram />;
     case 'Java':

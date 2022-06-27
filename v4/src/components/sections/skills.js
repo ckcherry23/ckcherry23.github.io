@@ -82,8 +82,8 @@ const Skills = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const languages = ['Java', 'C++', 'JavaScript', 'Python', 'C#', 'Dart'];
-  const frameworks = ['Flutter', 'React', 'Node.js', 'ASP.NET', 'Vue.js', 'HTML', 'CSS', 'Sass', 'Firebase', 'mongoDB', 'PostgreSQL', 'Git', 'Figma'];
+  const languages = ['Java', 'C++', 'JavaScript', 'Python', 'C#', 'Dart', 'HTML', 'CSS'];
+  const frameworks = ['Flutter', 'React', 'Node.js', 'ASP.NET', 'Vue.js', 'Sass', 'Firebase', 'mongoDB', 'PostgreSQL', 'Git', 'Figma'];
 
   return (
     <StyledSkillsSection id="about" ref={revealContainer}>
@@ -103,7 +103,7 @@ const Skills = () => {
             )}
           </div>
 
-          <li className='skill-heading'>Frameworks:</li>
+          <li className='skill-heading'>Frameworks & More:</li>
           <div className="skills-list">
             {frameworks && frameworks.map((skill, i) =>
               <a className="skill-icon" key={skill}>
