@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   IconAppStore,
+  IconAspnet,
   IconBookmark,
   IconCodepen,
   IconCPlusPlus,
@@ -9,8 +10,12 @@ import {
   IconCss,
   IconDart,
   IconExternal,
+  IconFigma,
+  IconFirebase,
+  IconFlutter,
   IconFolder,
   IconFork,
+  IconGit,
   IconGitHub,
   IconHtml,
   IconInstagram,
@@ -19,17 +24,25 @@ import {
   IconLinkedin,
   IconLoader,
   IconLogo,
+  IconMongoDb,
   IconMedium,
+  IconNodejs,
   IconPlayStore,
   IconPython,
+  IconReact,
+  IconSass,
   IconStar,
   IconTwitter,
+  IconVuejs,
 } from '@components/icons';
+import IconPostgreSql from './postgresql';
 
 const Icon = ({ name }) => {
   switch (name) {
     case 'AppStore':
       return <IconAppStore />;
+    case 'ASP.NET':
+      return <IconAspnet />;
     case 'Bookmark':
       return <IconBookmark />;
     case 'Codepen':
@@ -44,10 +57,18 @@ const Icon = ({ name }) => {
       return <IconDart />;
     case 'External':
       return <IconExternal />;
+    case 'Figma':
+      return <IconFigma />;
+    case 'Firebase':
+      return <IconFirebase />;
+    case 'Flutter':
+      return <IconFlutter />;
     case 'Folder':
       return <IconFolder />;
     case 'Fork':
       return <IconFork />;
+    case 'Git':
+      return <IconGit />;
     case 'GitHub':
       return <IconGitHub />;
     case 'HTML':
@@ -66,14 +87,26 @@ const Icon = ({ name }) => {
       return <IconLogo />;
     case 'Medium':
       return <IconMedium />;
+    case 'mongoDB':
+      return <IconMongoDb />;
+    case 'Node.js':
+      return <IconNodejs />;
     case 'PlayStore':
       return <IconPlayStore />;
+    case 'PostgreSQL':
+      return <IconPostgreSql />;
     case 'Python':
-      return <IconPython />;
+      return <IconPython />;   
+    case 'React':
+      return <IconReact />;
+    case 'Sass':
+      return <IconSass />;
     case 'Star':
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'Vue.js':
+      return <IconVuejs />;
     default:
       return <IconExternal />;
   }
