@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 // import { email } from '@config';
 
 const StyledHeroSection = styled.section`
@@ -88,6 +89,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I create human-centered apps.</h3>;
   const four = (
     <>
+
       <p>
         I’m a Year 2 Computer Science student at {' '} 
         <a href="https://www.nus.edu.sg/" target="_blank" rel="noreferrer">
