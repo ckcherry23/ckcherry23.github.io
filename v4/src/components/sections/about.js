@@ -117,7 +117,7 @@ const About = () => {
               I'm also working on an {' '}
               <a href="https://github.com/aakanshanarain/MWS-Student-Dashboard">education resources 
               dashboard</a> for Methodist Welfare Services as my CCSGP project, and mentoring my 
-              juniors in their summer project as an {' '}
+              juniors in their summer projects as an {' '}
               <a href="https://nusskylab-dev.comp.nus.edu.sg/public_views/public_projects">Orbital advisor</a>. 
             </p>
 
