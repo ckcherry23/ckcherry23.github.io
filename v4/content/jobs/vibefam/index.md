@@ -3,7 +3,7 @@ date: '2022-01-06'
 title: 'Freelance Software Developer'
 company: 'vibefam'
 location: 'Singapore'
-range: 'October - December 2022'
+range: 'October 2021 - December 2021'
 url: 'https://vibefam.com'
 techstack: ["Vue.js", "Firebase", "JavaScript"]
 ---
