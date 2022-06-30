@@ -107,30 +107,24 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Charisma and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I'm Charisma and I enjoy creating software that makes a positive difference 
+              in people's lives! 
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              My main focus these days is building digital analytic tools for EDM machines at {' '}
+              <a href="https://www.makino.com/machine-technology/software-digital">Makino Asia</a>. 
+              I'm also working on an {' '}
+              <a href="https://github.com/aakanshanarain/MWS-Student-Dashboard">education resources 
+              dashboard</a> for Methodist Welfare Services as my CCSGP project, and mentoring my 
+              juniors in their summer project as an {' '}
+              <a href="https://nusskylab-dev.comp.nus.edu.sg/public_views/public_projects">Orbital advisor</a>. 
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              In the future, I aspire to be a Tech Entrepreneur. I am a part of {' '}
+              <a href="https://www.linkedin.com/company/nusstartit/">StartIT - NUS Technopreneurship Society</a> 
+              &nbsp;where I execute our new action-focussed ThinkTank initiative as the Deputy Director of Project Management.
             </p>
           </div>
         </StyledText>
