@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { Icon } from '@components/icons';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -162,6 +163,48 @@ const StyledTabPanel = styled.div`
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
   }
+
+  .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: right;
+  }
+
+  .stack-icon-name {
+    bottom: -1.3rem;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    opacity: 0;
+    position: absolute;
+    transition: opacity .5s,color .5s;
+    white-space: nowrap;
+  }
+
+  .stack-icon:hover {
+    .stack-icon-name {
+      opacity: 1;
+    }
+
+    a:hover {
+        color: var(--rose);
+    }
+  }
+
+  .stack-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    position: relative;
+    width: 40px;
+    z-index: 0;
+    max-height: 40px;
+    max-width: 40px;
+  }
 `;
 
 const Jobs = () => {
@@ -179,6 +222,7 @@ const Jobs = () => {
               location
               range
               url
+              techstack
             }
             html
           }
@@ -273,7 +317,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company, range, techstack } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -297,6 +341,15 @@ const Jobs = () => {
                     <p className="range">{range}</p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
+                    
+                    <div className="stack-list">
+                      {techstack && techstack.map((tech, i) =>
+                        <a className="stack-icon" key={tech}>
+                          <Icon name={tech} />
+                          <div className="stack-icon-name">{tech}</div>
+                        </a>
+                      )}
+                    </div>
                   </StyledTabPanel>
                 </CSSTransition>
               );
