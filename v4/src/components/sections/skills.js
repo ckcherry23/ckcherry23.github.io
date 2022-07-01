@@ -82,8 +82,8 @@ const Skills = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const languages = ['Java', 'C++', 'JavaScript', 'Python', 'C#', 'Dart', 'HTML', 'CSS'];
-  const frameworks = ['Flutter', 'React', 'Node.js', 'ASP.NET', 'Vue.js', 'Sass', 'Firebase', 'mongoDB', 'PostgreSQL', 'Git', 'Figma'];
+  const languages = ['Java', 'JavaScript', 'C++', 'C#', 'Python', 'Dart', 'HTML', 'CSS'];
+  const frameworks = ['Flutter', 'ASP.NET', 'React', 'Vue.js', 'Node.js', 'Firebase', 'mongoDB', 'Git', 'Figma'];
 
   return (
     <StyledSkillsSection id="about" ref={revealContainer}>
