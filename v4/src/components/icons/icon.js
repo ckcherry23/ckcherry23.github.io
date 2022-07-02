@@ -17,6 +17,7 @@ import {
   IconFork,
   IconGit,
   IconGitHub,
+  IconGoogleMaps,
   IconHtml,
   IconInstagram,
   IconJava,
@@ -28,6 +29,7 @@ import {
   IconMedium,
   IconNextjs,
   IconNodejs,
+  IconPayPal,
   IconPlayStore,
   IconPython,
   IconReact,
@@ -74,6 +76,8 @@ const Icon = ({ name }) => {
       return <IconGit />;
     case 'GitHub':
       return <IconGitHub />;
+    case 'Google Maps':
+      return <IconGoogleMaps />;
     case 'HTML':
       return <IconHtml />;
     case 'Instagram':
@@ -96,6 +100,8 @@ const Icon = ({ name }) => {
       return <IconNextjs />;
     case 'Node.js':
       return <IconNodejs />;
+    case 'PayPal':
+      return <IconPayPal />;
     case 'PlayStore':
       return <IconPlayStore />;
     case 'PostgreSQL':

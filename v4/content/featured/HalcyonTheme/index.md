@@ -2,8 +2,9 @@
 date: '1'
 title: 'FoodStack'
 cover: './halcyon.png'
-github: 'https://github.com/bchiang7/halcyon-site'
-cta: 'https://halcyon-theme.netlify.com/'
-techstack: ["Flutter", "Firebase", "JavaScript", "Google Maps", "Braintree"]
+cta: 'https://docs.google.com/document/d/1rlbRK2gxNLM7VrQf2PNl_nj6aiuhsDKyiJ3leHSIkTU/edit?usp=sharing'
+github: 'https://github.com/Team-APPetite/FoodStack'
+external: 'https://youtu.be/i4llenDoj2E'
+techstack: ["Flutter", "Firebase", "JavaScript", "Google Maps", "PayPal"]
 ---
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+A group food-ordering app to cut down high delivery costs and skip the minimum order amount. Create group orders, join existing nearby orders and get notified when your favourite restaurants are having customers nearby.
