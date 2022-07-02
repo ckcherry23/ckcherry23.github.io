@@ -1,6 +1,6 @@
 ---
 date: '2022-04-29'
-title: 'Full Stack Engineer Intern'
+title: 'Full Stack Developer Intern'
 company: 'FollowTrade'
 location: 'Singapore'
 range: 'October 2021 - April 2022'

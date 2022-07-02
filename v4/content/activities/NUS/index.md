@@ -4,10 +4,8 @@ title: 'Teaching Assistant'
 company: 'NUS'
 location: 'Singapore'
 range: 'May 2022 - Present'
-url: 'https://www.makino.com.sg/machine-technology/software-digital'
-techstack: ["Java"]
+url: 'https://nus.edu.sg/cdtl/professional-development/getting-started/teaching-assistants%27-programme-(tap)'
+techstack: ["Java", "Flutter", "Firebase", "React"]
 ---
----
-
-* Orbital advisor in 2022 for 5 teams
-* AY22/23S1: CS2103T
+* **Summer '22:** Orbital Advisor - Mentored 5 teams in their mobile app development summer projects
+* **AY22/23 Sem 1:** Software Engineering (CS2103T) - Conduct weekly tutorials and guide students in core software engineering practices
