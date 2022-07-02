@@ -1,11 +1,11 @@
 ---
-date: '2022-04-29'
-title: 'Full Stack Engineer Intern'
-company: 'FollowTrade'
+date: '2023-05-08'
+title: 'Deputy Director of Project Management'
+company: 'StartIT'
 location: 'Singapore'
-range: 'October 2021 - April 2022'
-url: 'https://follow-trade.com'
-techstack: ["Next.js", "Tailwind CSS", "WordPress"]
+range: 'August 2021 - Present'
+url: 'https://www.linkedin.com/company/nusstartit/'
+techstack: []
 ---
-* Spearheaded the front-end development of the social trading web app
-* Improved UX by simplifying the sitemap for the complex interconnected use cases of copy trading
+* Initiate and execute the ThinkTank program to guide freshers in building their first startup
+* Plan logistics for the flagship start-up pitching competition BitHacks
