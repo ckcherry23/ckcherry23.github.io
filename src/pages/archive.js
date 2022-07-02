@@ -177,7 +177,7 @@ const ArchivePage = ({ location, data }) => {
                     ios,
                     android,
                     title,
-                    tech,
+                    techstack,
                     company,
                   } = node.frontmatter;
                   return (
@@ -190,16 +190,16 @@ const ArchivePage = ({ location, data }) => {
                         {company ? <span>{company}</span> : <span>—</span>}
                       </td>
 
-                      <td className="tech hide-on-mobile">
-                        {tech.length > 0 &&
-                          tech.map((item, i) => (
+                      {/* <td className="tech hide-on-mobile">
+                        {techstack.length > 0 &&
+                          techstack.map((item, i) => (
                             <span key={i}>
                               {item}
                               {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
+                              {i !== techstack.length - 1 && <span className="separator">&middot;</span>}
                             </span>
                           ))}
-                      </td>
+                      </td> */}
 
                       <td className="links">
                         <div>
@@ -253,7 +253,7 @@ export const pageQuery = graphql`
           frontmatter {
             date
             title
-            tech
+            techstack
             github
             external
             ios
