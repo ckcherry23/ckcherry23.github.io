@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ckcherry23.github.io/sitemap.xml
+Host: https://ckcherry23.github.io
