@@ -56,21 +56,7 @@ const StyledProject = styled.li`
         padding: 25px 25px 20px;
       }
     }
-    .project-tech-list {
-      justify-content: flex-end;
-
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-      }
-
-      li {
-        margin: 0 0 5px 20px;
-
-        @media (max-width: 768px) {
-          margin: 0 10px 5px 0;
-        }
-      }
-    }
+    
     .project-links {
       justify-content: flex-end;
       margin-left: 0;
@@ -181,31 +167,46 @@ const StyledProject = styled.li`
     }
   }
 
-  .project-tech-list {
+  .stack-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
+    justify-content: right;
+  }
+
+  .stack-icon-name {
+    bottom: -1.3rem;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    opacity: 0;
+    position: absolute;
+    transition: opacity .5s,color .5s;
+    white-space: nowrap;
+  }
+
+  .stack-icon:hover {
+    .stack-icon-name {
+      opacity: 1;
+    }
+
+    a:hover {
+        color: var(--rose);
+    }
+  }
+
+  .stack-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
     position: relative;
-    z-index: 2;
-    margin: 25px 0 10px;
-    padding: 0;
-    list-style: none;
-
-    li {
-      margin: 0 20px 5px 0;
-      color: var(--light-slate);
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
-      white-space: nowrap;
-    }
-
-    @media (max-width: 768px) {
-      margin: 10px 0;
-
-      li {
-        margin: 0 10px 5px 0;
-        color: var(--lightest-slate);
-      }
-    }
+    width: 40px;
+    z-index: 0;
+    max-height: 40px;
+    max-width: 40px;
   }
 
   .project-links {
@@ -219,19 +220,9 @@ const StyledProject = styled.li`
     a {
       ${({ theme }) => theme.mixins.flexCenter};
       padding: 10px;
-
-      &.external {
-        svg {
-          width: 22px;
-          height: 22px;
-          margin-top: -4px;
-        }
-      }
-
-      svg {
-        width: 20px;
-        height: 20px;
-      }
+      color: var(--light-slate);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
     }
 
     .cta {
@@ -316,7 +307,7 @@ const Featured = () => {
                   gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
               }
-              tech
+              techstack
               github
               external
               cta
@@ -352,15 +343,14 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, title, techstack, github, cover, cta } = frontmatter;
             const image = getImage(cover);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
-
+                  <p className="project-overline">Featured Project</p>
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
                     </h3>
@@ -370,31 +360,33 @@ const Featured = () => {
                       dangerouslySetInnerHTML={{ __html: html }}
                     />
 
-                    {tech.length && (
-                      <ul className="project-tech-list">
-                        {tech.map((tech, i) => (
-                          <li key={i}>{tech}</li>
-                        ))}
-                      </ul>
-                    )}
+                    <div className="stack-list">
+                      {techstack && techstack.map((tech, i) =>
+                        <a className="stack-icon" key={tech}>
+                          <Icon name={tech} />
+                          <div className="stack-icon-name">{tech}</div>
+                        </a>
+                      )}
+                    </div>
 
                     <div className="project-links">
+                      {external && (
+                        <a href={external} aria-label="External Link" className="cta">
+                          Demo
+                        </a>
+                      )}
+                      {github && (
+                        <a href={github} aria-label="GitHub Link" className="cta">
+                          View on GitHub
+                        </a>
+                      )}
                       {cta && (
                         <a href={cta} aria-label="Course Link" className="cta">
                           Learn More
                         </a>
                       )}
-                      {github && (
-                        <a href={github} aria-label="GitHub Link">
-                          <Icon name="GitHub" />
-                        </a>
-                      )}
-                      {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
-                          <Icon name="External" />
-                        </a>
-                      )}
                     </div>
+                    
                   </div>
                 </div>
 

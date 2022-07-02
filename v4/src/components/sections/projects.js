@@ -143,24 +143,46 @@ const StyledProject = styled.li`
     }
   }
 
-  .project-tech-list {
+  .stack-list {
     display: flex;
-    align-items: flex-end;
-    flex-grow: 1;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 20px 0 0 0;
-    list-style: none;
+    padding: 10px;
+    justify-content: right;
+  }
 
-    li {
-      font-family: var(--font-mono);
-      font-size: var(--fz-xxs);
-      line-height: 1.75;
+  .stack-icon-name {
+    bottom: -1.3rem;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    opacity: 0;
+    position: absolute;
+    transition: opacity .5s,color .5s;
+    white-space: nowrap;
+  }
 
-      &:not(:last-of-type) {
-        margin-right: 15px;
-      }
+  .stack-icon:hover {
+    .stack-icon-name {
+      opacity: 1;
     }
+
+    a:hover {
+        color: var(--rose);
+    }
+  }
+
+  .stack-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    position: relative;
+    width: 40px;
+    z-index: 0;
+    max-height: 40px;
+    max-width: 40px;
   }
 `;
 
@@ -178,7 +200,7 @@ const Projects = () => {
           node {
             frontmatter {
               title
-              tech
+              techstack
               github
               external
             }
@@ -212,7 +234,7 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, title, techstack } = frontmatter;
 
     return (
       <div className="project-inner">
@@ -250,13 +272,14 @@ const Projects = () => {
         </header>
 
         <footer>
-          {tech && (
-            <ul className="project-tech-list">
-              {tech.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
-          )}
+          <div className="stack-list">
+            {techstack && techstack.map((tech, i) =>
+              <a className="stack-icon" key={tech}>
+                <Icon name={tech} />
+                <div className="stack-icon-name">{tech}</div>
+              </a>
+            )}
+          </div>
         </footer>
       </div>
     );
