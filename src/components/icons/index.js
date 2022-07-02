@@ -34,6 +34,7 @@ export { default as IconPython } from './python';
 export { default as IconReact } from './react';
 export { default as IconSass } from './sass';
 export { default as IconStar } from './star';
+export { default as IconSql } from './sql';
 export { default as IconTailwind } from './tailwind';
 export { default as IconTwitter } from './twitter';
 export { default as IconVuejs } from './vuejs';

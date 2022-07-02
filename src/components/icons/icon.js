@@ -35,6 +35,7 @@ import {
   IconReact,
   IconSass,
   IconStar,
+  IconSql,
   IconTailwind,
   IconTwitter,
   IconVuejs,
@@ -114,6 +115,8 @@ const Icon = ({ name }) => {
       return <IconSass />;
     case 'Star':
       return <IconStar />;
+    case 'SQL':
+      return <IconSql />;
     case 'Tailwind CSS':
       return <IconTailwind />;
     case 'Twitter':

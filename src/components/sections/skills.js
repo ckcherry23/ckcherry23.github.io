@@ -82,7 +82,7 @@ const Skills = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const languages = ['Java', 'JavaScript', 'C++', 'C#', 'Python', 'Dart', 'HTML', 'CSS'];
+  const languages = ['Java', 'JavaScript', 'C++', 'C#', 'Python', 'Dart', 'HTML', 'CSS', 'SQL'];
   const frameworks = ['Flutter', 'ASP.NET', 'React', 'Vue.js', 'Node.js', 'Firebase', 'mongoDB', 'Git', 'Figma'];
 
   return (
@@ -103,7 +103,7 @@ const Skills = () => {
             )}
           </div>
 
-          <li className='skill-heading'>Frameworks & More:</li>
+          <li className='skill-heading'>Frameworks & Tools:</li>
           <div className="skills-list">
             {frameworks && frameworks.map((skill, i) =>
               <a className="skill-icon" key={skill}>
