@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'FoodStack'
-cover: './halcyon.png'
+cover: './foodstack.png'
 cta: 'https://docs.google.com/document/d/1rlbRK2gxNLM7VrQf2PNl_nj6aiuhsDKyiJ3leHSIkTU/edit?usp=sharing'
 github: 'https://github.com/Team-APPetite/FoodStack'
 external: 'https://youtu.be/i4llenDoj2E'
