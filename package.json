@@ -1,7 +1,7 @@
 {
-  "name": "v4",
+  "name": "ckcherry23.github.io",
   "description": "Personal Website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Charisma Kausar <charisma.kausar@gmail.com>",
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

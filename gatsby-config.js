@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Charisma Kausar',
     description:
-      'Charisma Kausar is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Charisma Kausar is a software engineer who specializes in building easy-to-use and beautiful apps for the world.',
     siteUrl: 'https://ckcherry23.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ckcherry23',
@@ -77,7 +77,7 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.green },
+              tracedSVG: { color: config.colors.rose },
             },
           },
           {
@@ -152,7 +152,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingId: 'UA-65722901-2',
       },
     },
   ],
