@@ -1,12 +1,10 @@
 ---
-date: '2022-07-29'
-title: 'Software Engineering Intern'
-company: 'Makino Asia'
+date: '2021-04-30'
+title: 'Computer Science Teacher'
+company: 'CodeCamp'
 location: 'Singapore'
-range: 'May 2022 - Present'
-url: 'https://www.makino.com.sg/machine-technology/software-digital'
-techstack: ["C#", "ASP.NET", "JavaScript", "HTML", "CSS"]
+range: 'February 2021 - April 2021'
+url: ''
+techstack: []
 ---
----
-
-* Developing the Analytics features for the Machine Monitoring Software to compare machine events and data graphs between projects to analyze and improve machine performance
+* Mentored 2 primary students by introducing coding and AI with project-based learning on Scratch and Teachable Machine
