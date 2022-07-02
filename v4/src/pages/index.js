@@ -16,7 +16,7 @@ const IndexPage = ({ location }) => (
       <Jobs />
       <Activities />
       <Featured />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
     </StyledMainContainer>
   </Layout>

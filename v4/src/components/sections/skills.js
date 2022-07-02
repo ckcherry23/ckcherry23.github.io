@@ -87,7 +87,7 @@ const Skills = () => {
 
   return (
     <StyledSkillsSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">My Skills</h2>
+      <h2>My Skills</h2>
       <StyledText>
         <div>
           <p>Here are a few technologies I’ve been working with recently:</p>

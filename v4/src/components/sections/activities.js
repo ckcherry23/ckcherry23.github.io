@@ -288,7 +288,7 @@ const Activities = () => {
 
   return (
     <StyledActivitiesSection id="activities" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Contributed</h2>
+      <h2>Where I’ve Contributed</h2>
 
       <div className="inner">
         <StyledTabPanels>
