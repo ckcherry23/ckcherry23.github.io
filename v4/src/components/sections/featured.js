@@ -56,6 +56,13 @@ const StyledProject = styled.li`
         padding: 25px 25px 20px;
       }
     }
+
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: right;
+    }
     
     .project-links {
       justify-content: flex-end;
@@ -171,7 +178,7 @@ const StyledProject = styled.li`
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    justify-content: right;
+    justify-content: left;
   }
 
   .stack-icon-name {
