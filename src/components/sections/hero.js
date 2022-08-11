@@ -91,7 +91,7 @@ const Hero = () => {
     <>
 
       <p>
-        I’m a Year 2 Computer Science student at {' '} 
+        I’m a Year 3 Computer Science student at {' '} 
         <a href="https://www.nus.edu.sg/" target="_blank" rel="noreferrer">
           NUS
         </a>
