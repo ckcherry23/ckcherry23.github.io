@@ -7,5 +7,5 @@ range: 'August 2021 - Present'
 url: 'https://www.linkedin.com/company/nusstartit/'
 techstack: []
 ---
-* Initiate and execute the ThinkTank program to guide freshers in building their first startup
-* Plan logistics for the flagship start-up pitching competition BitHacks
+* Initiated and executed the StartTank program to guide 15 teams in building their first technology start-up
+* Led 2 teams of 20 students to organise biweekly tech workshops, hackathons, and networking events to promote personal vision for the club – Taking actions towards goals
