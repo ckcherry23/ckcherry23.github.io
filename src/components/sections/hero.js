@@ -91,16 +91,13 @@ const Hero = () => {
     <>
 
       <p>
-        I’m a Year 2 Computer Science student at {' '} 
+        I’m a Year 3 Computer Science student at {' '} 
         <a href="https://www.nus.edu.sg/" target="_blank" rel="noreferrer">
           NUS
-        </a>
-        . Currently, I'm a Software Engineering Intern building accessible, customer-focussed products for monitoring machines
-        at {' '}
-        <a href="https://www.makino.com.sg/machine-technology/software-digital" target="_blank" rel="noreferrer">
-          Makino Asia
-        </a>
-        .
+        </a>. 
+        I believe in bringing the best user experience to people through innovative 
+        software to make their lives a little bit more easier and our 
+        world a little bit more efficient.
       </p>
     </>
   );

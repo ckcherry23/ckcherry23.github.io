@@ -112,19 +112,18 @@ const About = () => {
             </p>
 
             <p>
-              My main focus these days is building digital analytic tools for EDM machines at {' '}
-              <a href="https://www.makino.com/machine-technology/software-digital">Makino Asia</a>. 
+              My main focus these days is learning all about Software Engineering and Machine Learning at {' '}
+              <a href="https://www.nus.edu.sg/">NUS</a>. 
               I'm also working on an {' '}
-              <a href="https://github.com/aakanshanarain/MWS-Student-Dashboard">education resources 
-              dashboard</a> for Methodist Welfare Services as my CCSGP project, and mentoring my 
-              juniors in their summer projects as an {' '}
-              <a href="https://nusskylab-dev.comp.nus.edu.sg/public_views/public_projects">Orbital advisor</a>. 
+              <a href="https://github.com/aakanshanarain/MWS-Student-Dashboard">Educational 
+              dashboard</a> for a student care center as my CCSGP project, and tutoring part-time as a Teaching Assistant for {' '}
+              <a href="https://nus-cs2103-ay2223s1.github.io/website/admin/instructors.html">Software Engineering (CS2103/T)</a>. 
             </p>
 
             <p>
               In the future, I aspire to be a Tech Entrepreneur. I am a part of {' '}
               <a href="https://www.linkedin.com/company/nusstartit/">StartIT - NUS Technopreneurship Society</a> 
-              &nbsp;where I execute our new action-focussed ThinkTank initiative as the Deputy Director of Project Management.
+              &nbsp;where I lead my team to execute our new action-focussed StartTank initiative as the Deputy Director of Project Management.
             </p>
           </div>
         </StyledText>
