@@ -1,5 +1,8 @@
 import { css } from 'styled-components';
 
+import NunitoRegularTtf from '@fonts/Nunito/nunito.regular.ttf';
+import MontserratRegularWoff from '@fonts/Montserrat/montserrat-v24-latin-regular.woff';
+import Montserrat600Woff from '@fonts/Montserrat/montserrat-v24-latin-600.woff';
 import CalibreRegularWoff from '@fonts/Calibre/Calibre-Regular.woff';
 import CalibreRegularWoff2 from '@fonts/Calibre/Calibre-Regular.woff2';
 import CalibreMediumWoff from '@fonts/Calibre/Calibre-Medium.woff';
@@ -25,9 +28,9 @@ import SFMonoSemiboldItalicWoff from '@fonts/SFMono/SFMono-SemiboldItalic.woff';
 import SFMonoSemiboldItalicWoff2 from '@fonts/SFMono/SFMono-SemiboldItalic.woff2';
 
 const calibreNormalWeights = {
-  400: [CalibreRegularWoff, CalibreRegularWoff2],
+  400: [NunitoRegularTtf],
   500: [CalibreMediumWoff, CalibreMediumWoff2],
-  600: [CalibreSemiboldWoff, CalibreSemiboldWoff2],
+  600: [Montserrat600Woff],
 };
 
 const calibreItalicWeights = {

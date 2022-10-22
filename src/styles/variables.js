@@ -1,10 +1,11 @@
 import { css } from 'styled-components';
-//new navy: #161616
+//new navy: #161616, #0a192f; 
+// light navy: #112240;
 const variables = css`
   :root {
     --dark-navy: #020c1b;
-    --navy: #0a192f; 
-    --light-navy: #112240;
+    --navy: #1c2127; 
+    --light-navy:rgba(34, 39, 45, 0.9);
     --lightest-navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-slate: #495670;

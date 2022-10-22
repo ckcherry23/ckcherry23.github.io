@@ -75,10 +75,10 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: var(--navy);
-    color: var(--slate);
+    color: var(--light-slate);
     font-family: var(--font-sans);
-    font-size: var(--fz-xl);
-    line-height: 1.3;
+    font-size: var(--fz-lg);
+    line-height: 1.5;
 
     @media (max-width: 480px) {
       font-size: var(--fz-lg);
@@ -171,7 +171,7 @@ const GlobalStyle = createGlobalStyle`
 
   .big-heading {
     margin: 0;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 60px);
   }
 
   .medium-heading {
@@ -196,7 +196,7 @@ const GlobalStyle = createGlobalStyle`
       margin-right: 10px;
       color: var(--rose);
       font-family: var(--font-mono);
-      font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+      font-size: clamp(var(--fz-md), 3vw, var(--fz-lg));
       font-weight: 400;
 
       @media (max-width: 480px) {
