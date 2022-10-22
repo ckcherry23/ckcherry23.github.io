@@ -96,8 +96,7 @@ const Hero = () => {
           NUS
         </a>. 
         I believe in bringing the best user experience to people through innovative 
-        software to make their lives a little bit more easier and our 
-        world a little bit more efficient.
+        software to make their lives a bit more easier and efficient.
       </p>
     </>
   );
