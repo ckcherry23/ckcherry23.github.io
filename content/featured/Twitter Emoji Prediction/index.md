@@ -1,7 +1,7 @@
 ---
 date: '6'
 title: 'Twitter Emoji Prediction'
-cover: './script.mov'
+cover: './scrape.png'
 cta: ''
 github: ''
 external: ''

@@ -1,7 +1,7 @@
 ---
 date: '7'
 title: 'FineSpine'
-cover: './'
+cover: './repo.png'
 cta: ''
 github: 'https://github.com/CS3237-Project'
 external: ''
