@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   IconAppStore,
   IconAspnet,
+  IconBash,
   IconBookmark,
   IconCodepen,
   IconCPlusPlus,
@@ -12,6 +13,7 @@ import {
   IconExternal,
   IconFigma,
   IconFirebase,
+  IconFlask,
   IconFlutter,
   IconFolder,
   IconFork,
@@ -49,6 +51,8 @@ const Icon = ({ name }) => {
       return <IconAppStore />;
     case 'ASP.NET':
       return <IconAspnet />;
+    case 'Bash':
+      return <IconBash />;
     case 'Bookmark':
       return <IconBookmark />;
     case 'Codepen':
@@ -67,6 +71,8 @@ const Icon = ({ name }) => {
       return <IconFigma />;
     case 'Firebase':
       return <IconFirebase />;
+    case 'Flask':
+      return <IconFlask />;
     case 'Flutter':
       return <IconFlutter />;
     case 'Folder':

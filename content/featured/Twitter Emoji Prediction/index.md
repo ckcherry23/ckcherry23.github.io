@@ -1,12 +1,10 @@
 ---
-date: '6'
+date: '3'
 title: 'Twitter Emoji Prediction'
-cover: './scrape.png'
-cta: ''
-github: ''
+cover: './colab.png'
+cta: 'https://youtu.be/LSXbQLMQvng'
+github: 'https://github.com/ckcherry23/twemoji'
 external: ''
 techstack: ["Python", "Twitter"]
 ---
-<i><b>IN PROGRESS</b></i>
-<br>
-Applied Natural Language Processing with a random forsest algorithm to predict from among 10 emojis based on Tweet content.
+Applied Natural Language Processing with decision trees, random forests, gradient boosting, adaptive boosting, and extra-trees to predict an emoji response for tweets from among 5 emojis.

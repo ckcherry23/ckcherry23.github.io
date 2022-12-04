@@ -1,12 +1,10 @@
 ---
-date: '7'
+date: '2'
 title: 'FineSpine'
-cover: './repo.png'
-cta: ''
+cover: './desktop.png'
+cta: 'https://drive.google.com/drive/u/0/folders/1rkg0i7w83nrdxM2qxzyb_D3pltCQ2hLm'
 github: 'https://github.com/CS3237-Project'
 external: ''
-techstack: ["Flutter", "JavaScript", "CSS", "HTML", "Python"]
+techstack: ["Python", "Java", "React", "Node.js", "Flask", "Flutter", "Bash"]
 ---
-<i><b>IN PROGRESS</b></i>
-<br>
-A posture detection and well-being system built with IoT sensors, OpenPose classification, a mobile camera app and a browser extension. 
+A posture detection system built with IoT sensors, ML image classification, a desktop alert and a web dashboard. Know when your posture is bad and get tips on how to fix it. View your posture and activity trends on the analytics dashboard.

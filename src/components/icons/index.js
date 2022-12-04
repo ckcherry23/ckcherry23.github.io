@@ -1,5 +1,6 @@
 export { default as IconAppStore } from './appstore';
 export { default as IconAspnet } from './aspnet';
+export { default as IconBash } from './bash';
 export { default as IconBookmark } from './bookmark';
 export { default as IconCodepen } from './codepen';
 export { default as IconCPlusPlus } from './c++';
@@ -9,6 +10,7 @@ export { default as IconDart } from './dart';
 export { default as IconExternal } from './external';
 export { default as IconFigma } from './figma';
 export { default as IconFirebase } from './firebase';
+export { default as IconFlask } from './flask';
 export { default as IconFlutter } from './flutter';
 export { default as IconFolder } from './folder';
 export { default as IconFork } from './fork';
