@@ -1,5 +1,5 @@
 ---
-date: '7'
+date: '6'
 title: 'Walley - AR App Design'
 cover: './landingpage.png'
 cta: '/design_exercise.pdf'
