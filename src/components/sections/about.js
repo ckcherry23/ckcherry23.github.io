@@ -18,9 +18,7 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
-const StyledText = styled.div`
-
-`;
+const StyledText = styled.div``;
 
 const StyledPic = styled.div`
   position: relative;
@@ -107,23 +105,25 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Charisma and I enjoy creating software that makes a positive difference 
-              in people's lives! 
+              Hello! I'm Charisma and I enjoy creating software that makes a positive difference in
+              people's lives!
             </p>
 
             <p>
-              My main focus these days is learning all about Software Engineering and Machine Learning at {' '}
-              <a href="https://www.nus.edu.sg/">NUS</a>. 
-              I'm also working on an {' '}
-              <a href="https://github.com/aakanshanarain/MWS-Student-Dashboard">Educational 
-              dashboard</a> for a student care center as my CCSGP project, and tutoring part-time as a Teaching Assistant for {' '}
-              <a href="https://nus-cs2103-ay2223s1.github.io/website/admin/instructors.html">Software Engineering (CS2103/T)</a>. 
+              I am a Software Engineering Intern at{' '}
+              <a href="https://www.quantuminventions.com/">Quantum Inventions</a>, where I'm
+              building a plugin framework to open our application to customizations.
             </p>
-
             <p>
-              In the future, I aspire to be a Tech Entrepreneur. I am a part of {' '}
-              <a href="https://www.linkedin.com/company/nusstartit/">StartIT - NUS Technopreneurship Society</a> 
-              &nbsp;where I lead my team to execute our new action-focussed StartTank initiative as the Deputy Director of Project Management.
+              Outside of work, I contribute to{' '}
+              <a href="https://github.com/reposense/RepoSense">RepoSense</a>, an open-source project
+              for code contribution analysis. I'm also working on my Final Year Project at the{' '}
+              <a href="https://www.nus-hci.org/">NUS-HCI Lab</a> for Augmented Reality, and I tutor
+              part-time as a Teaching Assistant for{' '}
+              <a href="https://nus-cs2103-ay2223s1.github.io/website/admin/instructors.html">
+                Software Engineering
+              </a>
+              .
             </p>
           </div>
         </StyledText>
