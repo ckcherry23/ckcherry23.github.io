@@ -36,12 +36,13 @@ import {
   IconPython,
   IconReact,
   IconSass,
-  IconStar,
   IconSql,
+  IconStar,
+  IconSwift,
   IconTailwind,
   IconTwitter,
   IconVuejs,
-  IconWordpress
+  IconWordpress,
 } from '@components/icons';
 import IconPostgreSql from './postgresql';
 
@@ -114,15 +115,17 @@ const Icon = ({ name }) => {
     case 'PostgreSQL':
       return <IconPostgreSql />;
     case 'Python':
-      return <IconPython />;   
+      return <IconPython />;
     case 'React':
       return <IconReact />;
     case 'Sass':
       return <IconSass />;
-    case 'Star':
-      return <IconStar />;
     case 'SQL':
       return <IconSql />;
+    case 'Star':
+      return <IconStar />;
+    case 'Swift':
+      return <IconSwift />;
     case 'Tailwind CSS':
       return <IconTailwind />;
     case 'Twitter':

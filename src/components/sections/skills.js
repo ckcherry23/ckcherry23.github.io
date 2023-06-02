@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
@@ -22,7 +21,7 @@ const StyledText = styled.div`
     font-family: var(--font-mono);
     opacity: 0;
     position: absolute;
-    transition: opacity .5s,color .5s;
+    transition: opacity 0.5s, color 0.5s;
     white-space: nowrap;
   }
 
@@ -31,8 +30,8 @@ const StyledText = styled.div`
       opacity: 1;
     }
 
-    a:hover {
-        color: var(--rose);
+    &:hover {
+      color: var(--rose);
     }
   }
 
@@ -50,7 +49,7 @@ const StyledText = styled.div`
     max-height: 40px;
     max-width: 40px;
   }
-  
+
   .skill-heading {
     font-size: var(--fz-s);
     text-align: left;
@@ -82,8 +81,18 @@ const Skills = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const languages = ['Java', 'JavaScript', 'C++', 'C#', 'Python', 'Dart', 'HTML', 'CSS', 'SQL'];
-  const frameworks = ['Flutter', 'ASP.NET', 'React', 'Vue.js', 'Node.js', 'Firebase', 'mongoDB', 'Git', 'Figma'];
+  const languages = ['Java', 'JavaScript', 'Swift', 'Python', 'HTML', 'CSS', 'C#', 'C++', 'SQL'];
+  const frameworks = [
+    'React',
+    'Vue.js',
+    'Node.js',
+    'Flutter',
+    'Firebase',
+    'mongoDB',
+    'Git',
+    'Figma',
+    'Sass',
+  ];
 
   return (
     <StyledSkillsSection id="about" ref={revealContainer}>
@@ -93,24 +102,24 @@ const Skills = () => {
           <p>Here are a few technologies I’ve been working with recently:</p>
         </div>
         <ul>
-          <li className='skill-heading'>Languages:</li>
+          <li className="skill-heading">Languages:</li>
           <div className="skills-list">
-            {languages && languages.map((skill, i) =>
-              <a className="skill-icon" key={skill}>
+            {languages?.map(skill => (
+              <div className="skill-icon" key={skill}>
                 <Icon name={skill} />
                 <div className="skill-icon-name">{skill}</div>
-              </a>
-            )}
+              </div>
+            ))}
           </div>
 
-          <li className='skill-heading'>Frameworks & Tools:</li>
+          <li className="skill-heading">Frameworks & Tools:</li>
           <div className="skills-list">
-            {frameworks && frameworks.map((skill, i) =>
-              <a className="skill-icon" key={skill}>
+            {frameworks?.map(skill => (
+              <div className="skill-icon" key={skill}>
                 <Icon name={skill} />
                 <div className="skill-icon-name">{skill}</div>
-              </a>
-            )}
+              </div>
+            ))}
           </div>
         </ul>
       </StyledText>
