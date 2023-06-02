@@ -33,6 +33,8 @@ import {
   IconNodejs,
   IconPayPal,
   IconPlayStore,
+  IconPostgreSql,
+  IconPug,
   IconPython,
   IconReact,
   IconRedux,
@@ -42,11 +44,11 @@ import {
   IconSwift,
   IconTailwind,
   IconTwitter,
+  IconTypeScript,
   IconVuejs,
   IconWebpack,
   IconWordpress,
 } from '@components/icons';
-import IconPostgreSql from './postgresql';
 
 const Icon = ({ name }) => {
   switch (name) {
@@ -116,6 +118,8 @@ const Icon = ({ name }) => {
       return <IconPlayStore />;
     case 'PostgreSQL':
       return <IconPostgreSql />;
+    case 'Pug':
+      return <IconPug />;
     case 'Python':
       return <IconPython />;
     case 'React':
@@ -134,6 +138,8 @@ const Icon = ({ name }) => {
       return <IconTailwind />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'TypeScript':
+      return <IconTypeScript />;
     case 'Vue.js':
       return <IconVuejs />;
     case 'webpack':

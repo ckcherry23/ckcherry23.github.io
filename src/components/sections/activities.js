@@ -9,7 +9,7 @@ import { usePrefersReducedMotion } from '@hooks';
 import { Icon } from '@components/icons';
 
 const StyledActivitiesSection = styled.section`
-  max-width: 700px;
+  max-width: 800px;
 
   .inner {
     display: flex;
@@ -177,7 +177,7 @@ const StyledTabPanel = styled.div`
     font-family: var(--font-mono);
     opacity: 0;
     position: absolute;
-    transition: opacity .5s,color .5s;
+    transition: opacity 0.5s, color 0.5s;
     white-space: nowrap;
   }
 
@@ -186,8 +186,8 @@ const StyledTabPanel = styled.div`
       opacity: 1;
     }
 
-    a:hover {
-        color: var(--rose);
+    &:hover {
+      color: var(--rose);
     }
   }
 
@@ -319,14 +319,15 @@ const Activities = () => {
                     <p className="range">{range}</p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
-                    
+
                     <div className="stack-list">
-                      {techstack && techstack.map((tech, i) =>
-                        <a className="stack-icon" key={tech}>
-                          <Icon name={tech} />
-                          <div className="stack-icon-name">{tech}</div>
-                        </a>
-                      )}
+                      {techstack &&
+                        techstack.map(tech => (
+                          <div className="stack-icon" key={tech}>
+                            <Icon name={tech} />
+                            <div className="stack-icon-name">{tech}</div>
+                          </div>
+                        ))}
                     </div>
                   </StyledTabPanel>
                 </CSSTransition>
