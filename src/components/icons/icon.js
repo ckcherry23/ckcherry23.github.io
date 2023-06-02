@@ -35,6 +35,7 @@ import {
   IconPlayStore,
   IconPython,
   IconReact,
+  IconRedux,
   IconSass,
   IconSql,
   IconStar,
@@ -42,6 +43,7 @@ import {
   IconTailwind,
   IconTwitter,
   IconVuejs,
+  IconWebpack,
   IconWordpress,
 } from '@components/icons';
 import IconPostgreSql from './postgresql';
@@ -118,6 +120,8 @@ const Icon = ({ name }) => {
       return <IconPython />;
     case 'React':
       return <IconReact />;
+    case 'Redux':
+      return <IconRedux />;
     case 'Sass':
       return <IconSass />;
     case 'SQL':
@@ -126,12 +130,14 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Swift':
       return <IconSwift />;
-    case 'Tailwind CSS':
+    case 'Tailwind':
       return <IconTailwind />;
     case 'Twitter':
       return <IconTwitter />;
     case 'Vue.js':
       return <IconVuejs />;
+    case 'webpack':
+      return <IconWebpack />;
     case 'WordPress':
       return <IconWordpress />;
     default:
