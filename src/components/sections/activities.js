@@ -212,7 +212,7 @@ const Activities = () => {
     query {
       activities: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/activities/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {

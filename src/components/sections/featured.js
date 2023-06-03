@@ -63,7 +63,7 @@ const StyledProject = styled.li`
       padding: 10px;
       justify-content: right;
     }
-    
+
     .project-links {
       justify-content: flex-end;
       margin-left: 0;
@@ -187,7 +187,7 @@ const StyledProject = styled.li`
     font-family: var(--font-mono);
     opacity: 0;
     position: absolute;
-    transition: opacity .5s,color .5s;
+    transition: opacity 0.5s, color 0.5s;
     white-space: nowrap;
   }
 
@@ -196,8 +196,8 @@ const StyledProject = styled.li`
       opacity: 1;
     }
 
-    a:hover {
-        color: var(--rose);
+    &:hover {
+      color: var(--rose);
     }
   }
 
@@ -303,7 +303,7 @@ const Featured = () => {
     {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/featured/" } }
-        sort: { fields: [frontmatter___date], order: ASC }
+        sort: { frontmatter: { date: ASC } }
       ) {
         edges {
           node {
@@ -357,7 +357,7 @@ const Featured = () => {
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                  <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">Featured Project</p>
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
                     </h3>
@@ -368,12 +368,13 @@ const Featured = () => {
                     />
 
                     <div className="stack-list">
-                      {techstack && techstack.map((tech, i) =>
-                        <a className="stack-icon" key={tech}>
-                          <Icon name={tech} />
-                          <div className="stack-icon-name">{tech}</div>
-                        </a>
-                      )}
+                      {techstack &&
+                        techstack.map(tech => (
+                          <div className="stack-icon" key={tech}>
+                            <Icon name={tech} />
+                            <div className="stack-icon-name">{tech}</div>
+                          </div>
+                        ))}
                     </div>
 
                     <div className="project-links">
@@ -393,7 +394,6 @@ const Featured = () => {
                         </a>
                       )}
                     </div>
-                    
                   </div>
                 </div>
 

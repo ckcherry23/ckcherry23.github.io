@@ -156,7 +156,7 @@ const StyledProject = styled.li`
     font-family: var(--font-mono);
     opacity: 0;
     position: absolute;
-    transition: opacity .5s,color .5s;
+    transition: opacity 0.5s, color 0.5s;
     white-space: nowrap;
   }
 
@@ -165,8 +165,8 @@ const StyledProject = styled.li`
       opacity: 1;
     }
 
-    a:hover {
-        color: var(--rose);
+    &:hover {
+      color: var(--rose);
     }
   }
 
@@ -194,7 +194,7 @@ const Projects = () => {
           fileAbsolutePath: { regex: "/projects/" }
           frontmatter: { showInProjects: { ne: false } }
         }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {
@@ -273,12 +273,13 @@ const Projects = () => {
 
         <footer>
           <div className="stack-list">
-            {techstack && techstack.map((tech, i) =>
-              <a className="stack-icon" key={tech}>
-                <Icon name={tech} />
-                <div className="stack-icon-name">{tech}</div>
-              </a>
-            )}
+            {techstack &&
+              techstack.map(tech => (
+                <div className="stack-icon" key={tech}>
+                  <Icon name={tech} />
+                  <div className="stack-icon-name">{tech}</div>
+                </div>
+              ))}
           </div>
         </footer>
       </div>
