@@ -143,10 +143,17 @@ const StyledProject = styled.li`
     }
   }
 
+  hr {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    background-color: var(--dark-slate);
+  }
+
   .stack-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding-top: 20px;
     justify-content: right;
   }
 
@@ -176,10 +183,10 @@ const StyledProject = styled.li`
     flex-direction: column;
     height: 30px;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     margin-right: 1rem;
     position: relative;
-    width: 40px;
+    width: 30px;
     z-index: 0;
     max-height: 40px;
     max-width: 40px;
@@ -270,7 +277,7 @@ const Projects = () => {
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
         </header>
-
+        {techstack && <hr />}
         <footer>
           <div className="stack-list">
             {techstack &&

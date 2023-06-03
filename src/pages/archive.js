@@ -153,7 +153,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <p className="subtitle">A list of things I’ve worked on</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
@@ -164,13 +164,13 @@ const ArchivePage = ({ location, data }) => {
                 <th>Title</th>
                 <th className="hide-on-mobile">Made at</th>
                 <th className="hide-on-mobile">Built with</th>
-                <th>Link</th>
+                <th>Links</th>
               </tr>
             </thead>
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const { date, github, external, ios, android, title, company } = node.frontmatter;
+                  const { date, github, external, title, company, techstack } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
@@ -181,16 +181,18 @@ const ArchivePage = ({ location, data }) => {
                         {company ? <span>{company}</span> : <span>—</span>}
                       </td>
 
-                      {/* <td className="tech hide-on-mobile">
+                      <td className="tech hide-on-mobile">
                         {techstack.length > 0 &&
                           techstack.map((item, i) => (
                             <span key={i}>
                               {item}
                               {''}
-                              {i !== techstack.length - 1 && <span className="separator">&middot;</span>}
+                              {i !== techstack.length - 1 && (
+                                <span className="separator">&middot;</span>
+                              )}
                             </span>
                           ))}
-                      </td> */}
+                      </td>
 
                       <td className="links">
                         <div>
@@ -202,16 +204,6 @@ const ArchivePage = ({ location, data }) => {
                           {github && (
                             <a href={github} aria-label="GitHub Link">
                               <Icon name="GitHub" />
-                            </a>
-                          )}
-                          {ios && (
-                            <a href={ios} aria-label="Apple App Store Link">
-                              <Icon name="AppStore" />
-                            </a>
-                          )}
-                          {android && (
-                            <a href={android} aria-label="Google Play Store Link">
-                              <Icon name="PlayStore" />
                             </a>
                           )}
                         </div>
@@ -247,8 +239,6 @@ export const pageQuery = graphql`
             techstack
             github
             external
-            ios
-            android
             company
           }
           html
