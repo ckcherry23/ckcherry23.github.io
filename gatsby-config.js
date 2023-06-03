@@ -150,9 +150,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-65722901-2',
+        trackingIds: [
+          'G-37MGXRCX3K', // Google Analytics / GA
+        ],
       },
     },
   ],
