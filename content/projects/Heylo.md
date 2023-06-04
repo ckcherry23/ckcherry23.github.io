@@ -8,4 +8,4 @@ company: 'CS2103T Software Engineering'
 showInProjects: true
 ---
 
-Heylo is a friendly chatbot for managing tasks, deadlines and events built with Java.
+A friendly chatbot for managing tasks, deadlines and events using short text-based commands.

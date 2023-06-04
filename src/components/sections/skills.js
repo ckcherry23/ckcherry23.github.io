@@ -99,7 +99,7 @@ const Skills = () => {
       <h2>My Skills</h2>
       <StyledText>
         <div>
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Here are some languages and technologies I have worked with:</p>
         </div>
         <ul>
           <li className="skill-heading">Languages:</li>

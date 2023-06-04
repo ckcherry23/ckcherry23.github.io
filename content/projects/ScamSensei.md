@@ -8,4 +8,4 @@ company: 'HackSingapore 2023'
 showInProjects: true
 ---
 
-An AI-powered email scam detection system that checks whether emails forwarded to it are scam or not and provides a personalized reply.
+An AI-powered email scam detector that checks whether emails forwarded to it are scam and provides a personalized reply.

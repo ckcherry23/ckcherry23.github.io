@@ -8,4 +8,4 @@ company: 'CS2103T Software Engineering'
 showInProjects: true
 ---
 
-A simple and easy-to-use command line interface (CLI) app for contacts and meetings management built with Java.
+A simple and easy-to-use command line interface (CLI) app for contacts and meetings management.
