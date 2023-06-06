@@ -37,3 +37,9 @@ IndexPage.propTypes = {
 };
 
 export default IndexPage;
+
+export function Head() {
+  return (
+    <meta name="google-site-verification" content="YJM78utl-_5zhK4TdlptOOXbZjUIPShGRX5o0zpt22E" />
+  );
+}
