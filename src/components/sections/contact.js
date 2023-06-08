@@ -60,9 +60,9 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I’m currently looking for Software Engineering Internships from May to July 2023. 
-        If you think I'll be a valuable addition to your team or just have something to 
-        share, please do contact me and I'll get back to you soon!
+        I’m currently looking for full-time Software Engineering roles starting from May 2024. If
+        you think I'll be a valuable addition to your team or have anything to share, do reach out
+        to me and I'll get back to you asap!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

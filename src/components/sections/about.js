@@ -125,6 +125,10 @@ const About = () => {
               </a>
               .
             </p>
+            <p>
+              My goal is to leverage my software engineering skills and entrepreneurial spirit to
+              develop groundbreaking products that empower and transform lives.
+            </p>
           </div>
         </StyledText>
 

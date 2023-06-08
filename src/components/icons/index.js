@@ -46,3 +46,4 @@ export { default as IconTypeScript } from './typescript';
 export { default as IconVuejs } from './vuejs';
 export { default as IconWebpack } from './webpack';
 export { default as IconWordpress } from './wordpress';
+export { default as IconYoutube } from './youtube';

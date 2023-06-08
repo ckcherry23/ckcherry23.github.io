@@ -15,12 +15,12 @@ module.exports = {
       url: 'https://medium.com/@charismakausar',
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/ckcherry23',
+      name: 'YouTube',
+      url: 'https://www.youtube.com/@CharismaKausar',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/charismakausar',
+      name: 'Twitter',
+      url: 'https://twitter.com/ckcherry23',
     },
   ],
 

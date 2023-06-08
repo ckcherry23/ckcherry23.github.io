@@ -48,6 +48,7 @@ import {
   IconVuejs,
   IconWebpack,
   IconWordpress,
+  IconYoutube,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -146,6 +147,8 @@ const Icon = ({ name }) => {
       return <IconWebpack />;
     case 'WordPress':
       return <IconWordpress />;
+    case 'YouTube':
+      return <IconYoutube />;
     default:
       return <IconFolder />;
   }
