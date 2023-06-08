@@ -93,7 +93,7 @@ const StyledTableContainer = styled.div`
 
       &.company {
         font-size: var(--fz-lg);
-        white-space: nowrap;
+        white-space: wrap;
       }
 
       &.tech {
@@ -162,7 +162,7 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <th>Year</th>
                 <th>Title</th>
-                <th className="hide-on-mobile">Made at</th>
+                <th className="hide-on-mobile">Made for</th>
                 <th className="hide-on-mobile">Built with</th>
                 <th>Links</th>
               </tr>

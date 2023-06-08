@@ -77,25 +77,25 @@ const StyledProject = styled.li`
 
   .project-top {
     ${({ theme }) => theme.mixins.flexBetween};
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    align-items: start;
 
-    .folder {
-      color: var(--rose);
-      svg {
-        width: 40px;
-        height: 40px;
-      }
+    .company-name {
+      color: var(--slate);
+      font-size: var(--fz-xxs);
+      font-family: var(--font-mono);
+      margin-top: 8px;
     }
 
     .project-links {
       display: flex;
       align-items: center;
-      margin-right: -10px;
       color: var(--light-slate);
 
       a {
         ${({ theme }) => theme.mixins.flexCenter};
         padding: 5px 7px;
+        width: 40px;
 
         &.external {
           svg {
@@ -143,18 +143,23 @@ const StyledProject = styled.li`
     }
   }
 
-  hr {
+  footer {
     width: 100%;
-    margin: 0;
-    margin-top: 1rem;
-    background-color: var(--dark-slate);
+
+    hr {
+      width: 100%;
+      margin: 0;
+      margin-top: 1rem;
+      background-color: var(--dark-slate);
+    }
   }
 
   .stack-list {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
-    justify-content: right;
+    justify-content: left;
+    row-gap: 20px;
   }
 
   .stack-icon-name {
@@ -210,6 +215,7 @@ const Projects = () => {
               techstack
               github
               external
+              company
             }
             html
           }
@@ -241,15 +247,19 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, techstack } = frontmatter;
+    const { github, external, title, techstack, company } = frontmatter;
 
     return (
       <div className="project-inner">
         <header>
           <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
-            </div>
+            <h3 className="project-title">
+              <a href={external} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+              <div className="company-name">{company}</div>
+            </h3>
+
             <div className="project-links">
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
@@ -269,16 +279,10 @@ const Projects = () => {
             </div>
           </div>
 
-          <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
-              {title}
-            </a>
-          </h3>
-
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
         </header>
-        {techstack && <hr />}
         <footer>
+          {/* {techstack && <hr />} */}
           <div className="stack-list">
             {techstack &&
               techstack.map(tech => (
@@ -295,7 +299,7 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      <h2 ref={revealTitle}>Other Projects</h2>
 
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive

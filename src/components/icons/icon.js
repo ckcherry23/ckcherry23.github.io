@@ -147,7 +147,7 @@ const Icon = ({ name }) => {
     case 'WordPress':
       return <IconWordpress />;
     default:
-      return <IconExternal />;
+      return <IconFolder />;
   }
 };
 
