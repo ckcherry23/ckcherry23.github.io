@@ -5,7 +5,7 @@ github: ''
 external: '/class12_cs_project.pdf'
 techstack: ['C++']
 company: 'CBSE Class 12 Computer Science'
-showInProjects: false
+showInProjects: true
 ---
 
 A menu-driven graphing calculator for basic calculations, plotting graphs and solving equations.

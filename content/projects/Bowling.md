@@ -5,7 +5,7 @@ github: ''
 external: 'https://scratch.mit.edu/projects/457057326/editor/'
 techstack: ['Scratch']
 company: 'CS50x 2020'
-showInProjects: false
+showInProjects: true
 ---
 
 A bowling game variant made in Scratch after CS50x 2020 Lecture 0 by David J. Malan.

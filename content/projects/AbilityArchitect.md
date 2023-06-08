@@ -5,7 +5,7 @@ github: ''
 external: '/ability_architect.pdf'
 techstack: ['ChatGPT']
 company: 'N-NOVATE X SDG Open Hack 2023'
-showInProjects: false
+showInProjects: true
 ---
 
 A Generative AI-powered learning platform for persons with learning disabilities.
