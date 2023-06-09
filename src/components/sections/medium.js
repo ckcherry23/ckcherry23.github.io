@@ -231,8 +231,8 @@ const Medium = () => {
         </h2>
         <Link
           className="inline-link medium-link"
-          ref={revealMediumLink}
-          to={'https://medium.com/@charismakausar'}>
+          to="https://medium.com/@charismakausar"
+          ref={revealMediumLink}>
           view my Medium blog
         </Link>
       </header>
