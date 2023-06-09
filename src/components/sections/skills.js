@@ -95,7 +95,7 @@ const Skills = () => {
   ];
 
   return (
-    <StyledSkillsSection id="about" ref={revealContainer}>
+    <StyledSkillsSection id="skills" ref={revealContainer}>
       <h2>My Skills</h2>
       <StyledText>
         <div>

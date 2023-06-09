@@ -254,7 +254,7 @@ const Projects = () => {
         <header>
           <div className="project-top">
             <h3 className="project-title">
-              <a href={external} target="_blank" rel="noreferrer">
+              <a href={external || github} target="_blank" rel="noreferrer">
                 {title}
               </a>
               <div className="company-name">{company}</div>
@@ -284,13 +284,12 @@ const Projects = () => {
         <footer>
           {/* {techstack && <hr />} */}
           <div className="stack-list">
-            {techstack &&
-              techstack.map(tech => (
-                <div className="stack-icon" key={tech}>
-                  <Icon name={tech} />
-                  <div className="stack-icon-name">{tech}</div>
-                </div>
-              ))}
+            {techstack?.map(tech => (
+              <div className="stack-icon" key={tech}>
+                <Icon name={tech} />
+                <div className="stack-icon-name">{tech}</div>
+              </div>
+            ))}
           </div>
         </footer>
       </div>
@@ -298,7 +297,7 @@ const Projects = () => {
   };
 
   return (
-    <StyledProjectsSection>
+    <StyledProjectsSection id="other-projects">
       <h2 ref={revealTitle}>Other Projects</h2>
 
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
@@ -308,37 +307,37 @@ const Projects = () => {
       <ul className="projects-grid">
         {prefersReducedMotion ? (
           <>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <StyledProject key={i}>{projectInner(node)}</StyledProject>
-              ))}
+            {projectsToShow?.map(({ node }, i) => (
+              <StyledProject key={i}>{projectInner(node)}</StyledProject>
+            ))}
           </>
         ) : (
           <TransitionGroup component={null}>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <CSSTransition
+            {projectsToShow?.map(({ node }, i) => (
+              <CSSTransition
+                key={i}
+                classNames="fadeup"
+                timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
+                exit={false}>
+                <StyledProject
                   key={i}
-                  classNames="fadeup"
-                  timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
-                  <StyledProject
-                    key={i}
-                    ref={el => (revealProjects.current[i] = el)}
-                    style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
-                    {projectInner(node)}
-                  </StyledProject>
-                </CSSTransition>
-              ))}
+                  ref={el => (revealProjects.current[i] = el)}
+                  style={{
+                    transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
+                  }}>
+                  {projectInner(node)}
+                </StyledProject>
+              </CSSTransition>
+            ))}
           </TransitionGroup>
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </button>
+      {projects.length > GRID_LIMIT && (
+        <button className="more-button" onClick={() => setShowMore(!showMore)}>
+          Show {showMore ? 'Less' : 'More'}
+        </button>
+      )}
     </StyledProjectsSection>
   );
 };

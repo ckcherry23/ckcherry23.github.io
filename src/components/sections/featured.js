@@ -347,64 +347,59 @@ const Featured = () => {
       </h2>
 
       <StyledProjectsGrid>
-        {featuredProjects &&
-          featuredProjects.map(({ node }, i) => {
-            const { frontmatter, html } = node;
-            const { external, title, techstack, github, cover, cta } = frontmatter;
-            const image = getImage(cover);
+        {featuredProjects?.map(({ node }, i) => {
+          const { frontmatter, html } = node;
+          const { external, title, techstack, github, cover, cta } = frontmatter;
+          const image = getImage(cover);
 
-            return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
-                <div className="project-content">
-                  <div>
-                    <p className="project-overline">Featured Project</p>
-                    <h3 className="project-title">
-                      <a href={external}>{title}</a>
-                    </h3>
+          return (
+            <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+              <div className="project-content">
+                <div>
+                  <p className="project-overline">Featured Project</p>
+                  <h3 className="project-title">
+                    <a href={external}>{title}</a>
+                  </h3>
 
-                    <div
-                      className="project-description"
-                      dangerouslySetInnerHTML={{ __html: html }}
-                    />
+                  <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
 
-                    <div className="stack-list">
-                      {techstack &&
-                        techstack.map(tech => (
-                          <div className="stack-icon" key={tech}>
-                            <Icon name={tech} />
-                            <div className="stack-icon-name">{tech}</div>
-                          </div>
-                        ))}
-                    </div>
+                  <div className="stack-list">
+                    {techstack?.map(tech => (
+                      <div className="stack-icon" key={tech}>
+                        <Icon name={tech} />
+                        <div className="stack-icon-name">{tech}</div>
+                      </div>
+                    ))}
+                  </div>
 
-                    <div className="project-links">
-                      {external && (
-                        <a href={external} aria-label="External Link" className="cta">
-                          Demo
-                        </a>
-                      )}
-                      {github && (
-                        <a href={github} aria-label="GitHub Link" className="cta">
-                          View on GitHub
-                        </a>
-                      )}
-                      {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
-                          Learn More
-                        </a>
-                      )}
-                    </div>
+                  <div className="project-links">
+                    {external && (
+                      <a href={external} aria-label="External Link" className="cta">
+                        Demo
+                      </a>
+                    )}
+                    {github && (
+                      <a href={github} aria-label="GitHub Link" className="cta">
+                        View on GitHub
+                      </a>
+                    )}
+                    {cta && (
+                      <a href={cta} aria-label="Course Link" className="cta">
+                        Learn More
+                      </a>
+                    )}
                   </div>
                 </div>
+              </div>
 
-                <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
-                </div>
-              </StyledProject>
-            );
-          })}
+              <div className="project-image">
+                <a href={external ? external : github ? github : '#'}>
+                  <GatsbyImage image={image} alt={title} className="img" />
+                </a>
+              </div>
+            </StyledProject>
+          );
+        })}
       </StyledProjectsGrid>
     </section>
   );

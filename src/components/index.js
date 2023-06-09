@@ -14,4 +14,5 @@ export { default as Jobs } from './sections/jobs';
 export { default as Activities } from './sections/activities';
 export { default as Featured } from './sections/featured';
 export { default as Projects } from './sections/projects';
+export { default as Medium } from './sections/medium';
 export { default as Contact } from './sections/contact';
