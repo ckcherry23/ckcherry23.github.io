@@ -8,4 +8,4 @@ company: 'CS50x 2020'
 showInProjects: true
 ---
 
-A bowling game variant made in Scratch after CS50x 2020 Lecture 0 by David J. Malan.
+A bowling game variant made in Scratch, a block-based visual programming language developed by MIT.

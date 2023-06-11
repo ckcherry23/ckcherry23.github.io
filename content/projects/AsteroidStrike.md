@@ -8,4 +8,4 @@ company: 'CS3217 Software Engineering for Modern Application Platforms'
 showInProjects: true
 ---
 
-A space-themed Peggle clone built with a focus on good software engineering practices.
+A space-themed Peggle clone with a custom physics engine and game engine built from scratch.
