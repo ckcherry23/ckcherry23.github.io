@@ -190,7 +190,7 @@ const Medium = () => {
   }, []);
 
   const GRID_LIMIT = 4;
-  const initialPosts = mediumPosts.slice(0, GRID_LIMIT);
+  const initialPosts = mediumPosts?.slice(0, GRID_LIMIT);
   const postsToShow = showMore ? mediumPosts : initialPosts;
 
   const postInner = post => {
@@ -266,7 +266,7 @@ const Medium = () => {
         )}
       </StyledGrid>
 
-      {mediumPosts.length > GRID_LIMIT && (
+      {mediumPosts?.length > GRID_LIMIT && (
         <button className="more-button" onClick={() => setShowMore(!showMore)}>
           Show {showMore ? 'Less' : 'More'}
         </button>
