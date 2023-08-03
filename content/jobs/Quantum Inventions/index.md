@@ -5,7 +5,8 @@ company: 'Quantum Inventions'
 location: 'Singapore'
 range: 'May 2023 - July 2023'
 url: 'https://www.quantuminventions.com/'
-techstack: ['React', 'Redux', 'webpack', 'Sass', 'Tailwind']
+techstack:
+  ['React', 'Redux', 'TypeScript', 'Sass', 'Tailwind', 'webpack', 'Rollup', 'npm', 'Git', 'GitHub']
 ---
 
 ---
