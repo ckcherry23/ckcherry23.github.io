@@ -4,7 +4,7 @@ title: 'PulsePace'
 cover: './pulsepace.png'
 cta: 'https://docs.google.com/document/d/1eEBuZawwjBCuIAVobbgwye03V4deEiHjvCNtELCWB4U/edit?usp=sharing'
 github: 'https://github.com/PulsePace/PulsePace'
-external: 'https://youtu.be/T4kf1noDu_w'
+external: 'https://youtu.be/8BrOF35VesY'
 techstack: ['Swift', 'Firebase']
 ---
 
