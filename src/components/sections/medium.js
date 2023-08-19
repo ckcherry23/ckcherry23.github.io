@@ -38,6 +38,7 @@ const StyledMediumSection = styled.section`
   .more-button {
     ${({ theme }) => theme.mixins.button};
     margin: 80px auto 0;
+    display: block;
   }
 
   footer {
