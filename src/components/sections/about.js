@@ -105,29 +105,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Charisma and I enjoy creating software that makes a positive difference in
-              people's lives!
-            </p>
-
-            <p>
-              I am a Software Engineering Intern at{' '}
-              <a href="https://www.quantuminventions.com/">Quantum Inventions</a>, where I'm
-              building a plugin framework to open our application to customizations.
+              Hello! I'm Charisma and I enjoy creating software products that make a positive impact
+              in people's lives!
             </p>
             <p>
-              Outside of work, I contribute to{' '}
-              <a href="https://github.com/reposense/RepoSense">RepoSense</a>, an open-source project
-              for code contribution analysis. I'm also working on my Final Year Project at the{' '}
-              <a href="https://www.nus-hci.org/">NUS-HCI Lab</a> for Augmented Reality, and I tutor
-              part-time as a Teaching Assistant for{' '}
-              <a href="https://nus-cs2103-ay2223s1.github.io/website/admin/instructors.html">
-                Software Engineering
-              </a>
-              .
+              I've built <a href="https://www.artisan.land">Artisan</a>, a landing page and
+              portfolio site generator using AI, and I maintain an open-source project called{' '}
+              <a href="https://github.com/reposense/RepoSense">RepoSense</a>, a Git code
+              contributions analyzer.
             </p>
             <p>
-              My goal is to leverage my software engineering skills and entrepreneurial spirit to
-              develop groundbreaking products that empower and transform lives.
+              As the Frontend Lead for{' '}
+              <a href="https://dsc.comp.nus.edu.sg/">Google Developer Student Club</a>, I am helping
+              Ground-Up Initiative, an NGO with 25000+ volunteers, to manage their volunteers and
+              events more efficiently using technology.
+            </p>
+            <p>
+              Currently, I'm diving deep into the realm of Augmented Reality Smartglasses for my
+              Final Year Project at the <a href="https://www.nus-hci.org/">NUS-HCI Lab</a>. I also
+              tutor part-time as a Teaching Assistant for Software Engineering and Interaction
+              Design.
             </p>
           </div>
         </StyledText>
