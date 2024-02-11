@@ -22,6 +22,7 @@ import {
   IconFork,
   IconGit,
   IconGitHub,
+  IconGoogleCloud,
   IconGoogleMaps,
   IconHtml,
   IconInstagram,
@@ -29,6 +30,7 @@ import {
   IconJavaScript,
   IconJest,
   IconJunit,
+  IconKubernetes,
   IconLinkedin,
   IconLoader,
   IconLogo,
@@ -108,6 +110,8 @@ const Icon = ({ name }) => {
       return <IconGit />;
     case 'GitHub':
       return <IconGitHub />;
+    case 'Google Cloud':
+      return <IconGoogleCloud />;
     case 'Google Maps':
       return <IconGoogleMaps />;
     case 'HTML':
@@ -122,6 +126,8 @@ const Icon = ({ name }) => {
       return <IconJest />;
     case 'JUnit':
       return <IconJunit />;
+    case 'Kubernetes':
+      return <IconKubernetes />;
     case 'Linkedin':
       return <IconLinkedin />;
     case 'Loader':
