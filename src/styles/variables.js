@@ -1,17 +1,16 @@
 import { css } from 'styled-components';
-//new navy: #161616, #0a192f; 
-// light navy: #112240;
+
 const variables = css`
   :root {
-    --dark-navy: #020c1b;
-    --navy: #1c2127; 
-    --light-navy:rgba(34, 39, 45, 0.9);
-    --lightest-navy: #233554;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-navy: #0d0d0d;
+    --navy: #171717;
+    --light-navy: rgba(38, 38, 38, 0.6);
+    --lightest-navy: #4e4e4e;
+    --navy-shadow: rgba(13, 13, 13, 0.7);
     --dark-slate: #495670;
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
+    --slate: #9b9b9b;
+    --light-slate: #9ea3b0;
+    --lightest-slate: #e7e7e7;
     --white: #e6f1ff;
     --rose: #eeaaaa;
     --rose-tint: rgba(238, 170, 170, 0.1);
