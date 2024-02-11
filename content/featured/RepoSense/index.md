@@ -8,4 +8,4 @@ external: 'https://dashboard-1939-pr-reposense-reposense.surge.sh/?search=&sort=
 techstack: ['Vue.js', 'TypeScript', 'Pug', 'Sass', 'Git', 'Java', 'Cypress', 'JUnit']
 ---
 
-A contribution analysis tool for Git repositories. Provides chronological visualisation of the code contributions and commits made to a group of repositories to track work done in projects.
+An open-source contribution analysis tool for Git repositories. Provides chronological visualisation of the code contributions and commits made to a group of repositories to track work done in projects.
