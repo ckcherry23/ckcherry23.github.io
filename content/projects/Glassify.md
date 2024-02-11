@@ -1,9 +1,9 @@
 ---
-date: '2023-09-01'
+date: '2024-05-01'
 title: 'Glassify'
 github: 'https://github.com/vuminhduc796/OHMD-Voicify'
 external: 'https://dl.acm.org/doi/abs/10.1145/3581998'
-techstack: ['Python', 'Figma']
+techstack: ['Python', 'OpenAI API', 'Figma']
 company: 'NUS-HCI Lab'
 showInProjects: false
 ---
