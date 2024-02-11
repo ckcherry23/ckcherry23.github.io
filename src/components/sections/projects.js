@@ -73,6 +73,7 @@ const StyledProject = styled.li`
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
     transition: var(--transition);
+    backdrop-filter: blur(10px);
   }
 
   .project-top {

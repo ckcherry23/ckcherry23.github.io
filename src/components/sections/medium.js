@@ -89,6 +89,7 @@ const StyledPost = styled.li`
     border-radius: var(--border-radius);
     transition: var(--transition);
     background-color: var(--light-navy);
+    backdrop-filter: blur(10px);
 
     header,
     a {

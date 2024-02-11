@@ -153,11 +153,13 @@ const StyledProject = styled.li`
     background-color: var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
+    backdrop-filter: blur(10px);
 
     @media (max-width: 768px) {
       padding: 20px 0;
       background-color: transparent;
       box-shadow: none;
+      backdrop-filter: none;
 
       &:hover {
         box-shadow: none;
