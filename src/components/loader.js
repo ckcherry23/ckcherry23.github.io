@@ -9,7 +9,7 @@ const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
   /* Google chrome */
   @-webkit-keyframes svg-text-anim {
-   40% {
+    40% {
       stroke-dashoffset: 0;
       fill: transparent;
     }
@@ -21,11 +21,10 @@ const StyledLoader = styled.div`
       stroke-dashoffset: 0;
       fill: var(--rose);
     }
-    
-}
-/* Most browsers */
-@keyframes svg-text-anim {
-   40% {
+  }
+  /* Most browsers */
+  @keyframes svg-text-anim {
+    40% {
       stroke-dashoffset: 0;
       fill: transparent;
     }
@@ -37,8 +36,7 @@ const StyledLoader = styled.div`
       stroke-dashoffset: 0;
       fill: var(--rose);
     }
-    
-}
+  }
 `;
 
 const Loader = ({ finishLoading }) => {
@@ -82,7 +80,7 @@ const Loader = ({ finishLoading }) => {
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsMounted(true), 10);
-    setTextAnimation(0.1,3.0,1,'linear','#eeaaaa',false);
+    setTextAnimation(0.1, 3.0, 1, 'linear', '#eeaaaa', false);
     animate();
     return () => clearTimeout(timeout);
   }, []);
@@ -102,19 +100,18 @@ Loader.propTypes = {
   finishLoading: PropTypes.func.isRequired,
 };
 
-
-function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
-  let paths = document.querySelectorAll("path");
-  let mode=repeat?'infinite':'forwards'
+function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor, repeat) {
+  const paths = document.querySelectorAll('path');
+  const mode = repeat ? 'infinite' : 'forwards';
   for (let i = 0; i < paths.length; i++) {
-      const path = paths[i];
-      const length = path.getTotalLength();
-      path.style["stroke-dashoffset"] = `${length}px`;
-      path.style["stroke-dasharray"] = `${length}px`;
-      path.style["stroke-width"] = `${strokeWidth}px`;
-      path.style["stroke"] = `${strokeColor}`;
-      path.style["animation"] = `${duration}s svg-text-anim ${mode} ${timingFunction}`;
-      path.style["animation-delay"] = `${i * delay}s`;
+    const path = paths[i];
+    const length = path.getTotalLength();
+    path.style['stroke-dashoffset'] = `${length}px`;
+    path.style['stroke-dasharray'] = `${length}px`;
+    path.style['stroke-width'] = `${strokeWidth}px`;
+    path.style['stroke'] = `${strokeColor}`;
+    path.style['animation'] = `${duration}s svg-text-anim ${mode} ${timingFunction}`;
+    path.style['animation-delay'] = `${i * delay}s`;
   }
 }
 
