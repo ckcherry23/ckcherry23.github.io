@@ -16,14 +16,18 @@ const StyledHeroSection = styled.section`
   }
 
   h1 {
-    margin: 0 0 30px 4px;
+    margin: 0 0 30px 0px;
     color: var(--rose);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
 
+    @media (max-width: 860px) {
+      margin: 0 0 16px 0;
+    }
+
     @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
+      margin: 0 0 4px 0;
     }
   }
 
@@ -116,12 +120,8 @@ const Hero = () => {
         <a href="https://www.nus.edu.sg/" target="_blank" rel="noreferrer">
           NUS
         </a>
-        . I believe in bringing the best user experience to people through innovative software.
-        Currently, I'm a Software Engineer Intern at{' '}
-        <a href="https://www.quantuminventions.com/" target="_blank" rel="noreferrer">
-          Quantum Inventions
-        </a>
-        .
+        . I believe in bringing the best user experience to people through innovative software to
+        make their lives a bit more easier and happier :)
       </p>
     </>
   );
