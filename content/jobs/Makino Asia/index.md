@@ -10,6 +10,6 @@ techstack: ['JavaScript', 'C#', 'HTML', 'CSS', 'ASP.NET', 'Razor']
 
 ---
 
-- Single-handedly developed a customizable web interface for Machine Performance Analytics, which helped analyse and improve machining effectively instead of spending days on data processing and visualization
+- Developed a customizable web dashboard for analysing and comparing machinery performance with graphs in real-time or on historical data instead of machine operators spending 4+ hours on manual IoT data processing
 
 - Optimized the graph plotting algorithms to reduce runtime from minutes to less than 10 seconds while maintaining the data granularity

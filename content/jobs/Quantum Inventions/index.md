@@ -11,4 +11,5 @@ techstack:
 
 ---
 
-- Spearheading the software design and implementation of a plugin framework that allows 3rd party developers to upload and display custom UI plugins within the frontend web portal
+- Spearheaded software design and development of a scalable UI plug-in framework using micro frontend architecture, enabling 3rd party developers to create custom plug-ins and reducing workload for 20 internal staff
+- Created and released 2 code packages with APIs and a UI library for accelerated custom plug-in development for use by 10+ major clients in Southeast Asia

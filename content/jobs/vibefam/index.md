@@ -8,4 +8,6 @@ url: 'https://vibefam.com'
 techstack: ['Vue.js', 'Firebase', 'JavaScript', 'Jest']
 ---
 
-- Revamped the calendar scheduling function by implementing 5x faster and scalable queries on the backend, and by enhancing the calendar interface across different screen sizes
+---
+
+- Revamped the calendar scheduling function by implementing 2x faster and scalable queries on the cloud backend, and by creating a responsive calendar UI on the frontend for usage by 100+ fitness studios
