@@ -16,7 +16,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "pnpm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
@@ -63,7 +63,7 @@
     "react-transition-group": "^4.3.0",
     "rough-notation": "^0.5.1",
     "scrollreveal": "^4.0.5",
-    "sharp": "^0.32.1",
+    "sharp": "^0.33.2",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
