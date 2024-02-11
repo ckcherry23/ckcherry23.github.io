@@ -3,7 +3,7 @@ date: '2023-11-30'
 title: 'Artisan'
 github: ''
 external: 'https://www.artisan.land'
-techstack: ['Next.js', 'Supabase', 'Tailwind', 'OpenAI API']
+techstack: ['Next.js', 'tRPC', 'Supabase', 'Prisma', 'Tailwind', 'OpenAI API']
 company: 'CS3216 Software Product Engineering for Digital Markets'
 showInProjects: false
 ---

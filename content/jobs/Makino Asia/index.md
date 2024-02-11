@@ -5,7 +5,7 @@ company: 'Makino Asia'
 location: 'Singapore'
 range: 'May 2022 - August 2022'
 url: 'https://www.makino.com.sg/machine-technology/software-digital'
-techstack: ['JavaScript', 'C#', 'HTML', 'CSS', 'ASP.NET', 'Razor']
+techstack: ['JavaScript', 'C#', 'HTML', 'CSS', 'ASP.NET']
 ---
 
 ---

@@ -9,7 +9,10 @@ import {
   IconCPlusPlus,
   IconCSharp,
   IconCss,
+  IconCypress,
   IconDart,
+  IconDocker,
+  IconExpressjs,
   IconExternal,
   IconFigma,
   IconFirebase,
@@ -24,25 +27,35 @@ import {
   IconInstagram,
   IconJava,
   IconJavaScript,
+  IconJest,
+  IconJunit,
   IconLinkedin,
   IconLoader,
   IconLogo,
   IconMongoDb,
   IconMedium,
+  IconNestjs,
   IconNextjs,
   IconNodejs,
+  IconNpm,
+  IconOpenAI,
   IconPayPal,
   IconPlayStore,
   IconPostgreSql,
+  IconPrisma,
   IconPug,
   IconPython,
   IconReact,
   IconRedux,
+  IconRollup,
   IconSass,
+  IconScratch,
   IconSql,
   IconStar,
+  IconSupabase,
   IconSwift,
   IconTailwind,
+  IconTrpc,
   IconTwitter,
   IconTypeScript,
   IconVuejs,
@@ -69,8 +82,14 @@ const Icon = ({ name }) => {
       return <IconCSharp />;
     case 'CSS':
       return <IconCss />;
+    case 'Cypress':
+      return <IconCypress />;
     case 'Dart':
       return <IconDart />;
+    case 'Docker':
+      return <IconDocker />;
+    case 'Express.js':
+      return <IconExpressjs />;
     case 'External':
       return <IconExternal />;
     case 'Figma':
@@ -99,6 +118,10 @@ const Icon = ({ name }) => {
       return <IconJava />;
     case 'JavaScript':
       return <IconJavaScript />;
+    case 'Jest':
+      return <IconJest />;
+    case 'JUnit':
+      return <IconJunit />;
     case 'Linkedin':
       return <IconLinkedin />;
     case 'Loader':
@@ -109,16 +132,27 @@ const Icon = ({ name }) => {
       return <IconMedium />;
     case 'mongoDB':
       return <IconMongoDb />;
+    case 'Nest.js':
+      return <IconNestjs />;
     case 'Next.js':
       return <IconNextjs />;
     case 'Node.js':
       return <IconNodejs />;
+    case 'npm':
+      return <IconNpm />;
+    case 'OpenAI API':
+    case 'OpenAI':
+    case 'Bing AI':
+    case 'ChatGPT':
+      return <IconOpenAI />;
     case 'PayPal':
       return <IconPayPal />;
     case 'PlayStore':
       return <IconPlayStore />;
     case 'PostgreSQL':
       return <IconPostgreSql />;
+    case 'Prisma':
+      return <IconPrisma />;
     case 'Pug':
       return <IconPug />;
     case 'Python':
@@ -127,16 +161,24 @@ const Icon = ({ name }) => {
       return <IconReact />;
     case 'Redux':
       return <IconRedux />;
+    case 'Rollup':
+      return <IconRollup />;
     case 'Sass':
       return <IconSass />;
+    case 'Scratch':
+      return <IconScratch />;
     case 'SQL':
       return <IconSql />;
     case 'Star':
       return <IconStar />;
+    case 'Supabase':
+      return <IconSupabase />;
     case 'Swift':
       return <IconSwift />;
     case 'Tailwind':
       return <IconTailwind />;
+    case 'tRPC':
+      return <IconTrpc />;
     case 'Twitter':
       return <IconTwitter />;
     case 'TypeScript':

@@ -5,7 +5,7 @@ company: 'CodeCamp'
 location: 'Singapore'
 range: 'February 2021 - April 2021'
 url: ''
-techstack: []
+techstack: ['Scratch']
 ---
 
 ---

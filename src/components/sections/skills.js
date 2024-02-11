@@ -81,17 +81,29 @@ const Skills = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const languages = ['Java', 'JavaScript', 'Swift', 'Python', 'HTML', 'CSS', 'C#', 'C++', 'SQL'];
+  const languages = [
+    'TypeScript',
+    'JavaScript',
+    'Swift',
+    'Python',
+    'Java',
+    'HTML',
+    'CSS',
+    'C#',
+    'C++',
+    'SQL',
+  ];
   const frameworks = [
     'React',
     'Vue.js',
-    'Node.js',
     'Flutter',
+    'Supabase',
     'Firebase',
     'mongoDB',
+    'Prisma',
     'Git',
+    'Tailwind',
     'Figma',
-    'Sass',
   ];
 
   return (
