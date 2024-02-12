@@ -308,23 +308,23 @@ const Activities = () => {
   const TabsComponent = () => (
     <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
       {activitiesData &&
-          activitiesData.map(({ node }, i) => {
-            const { company } = node.frontmatter;
-            return (
-              <StyledTabButton
-                key={i}
-                isActive={activeTabId === i}
-                onClick={() => setActiveTabId(i)}
-                ref={el => (tabs.current[i] = el)}
-                id={`tab-${i}`}
-                role="tab"
-                tabIndex={activeTabId === i ? '0' : '-1'}
-                aria-selected={activeTabId === i ? true : false}
-                aria-controls={`panel-${i}`}>
-                <span>{company}</span>
-              </StyledTabButton>
-            );
-          })}
+        activitiesData.map(({ node }, i) => {
+          const { company } = node.frontmatter;
+          return (
+            <StyledTabButton
+              key={i}
+              isActive={activeTabId === i}
+              onClick={() => setActiveTabId(i)}
+              ref={el => (tabs.current[i] = el)}
+              id={`tab-${i}`}
+              role="tab"
+              tabIndex={activeTabId === i ? '0' : '-1'}
+              aria-selected={activeTabId === i ? true : false}
+              aria-controls={`panel-${i}`}>
+              <span>{company}</span>
+            </StyledTabButton>
+          );
+        })}
       <StyledHighlight activeTabId={activeTabId} />
     </StyledTabList>
   );
