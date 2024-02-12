@@ -23,6 +23,22 @@ const StyledActivitiesSection = styled.section`
       min-height: 340px;
     }
   }
+
+  .hide-on-mobile {
+    display: block;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .hide-on-desktop {
+    display: none;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
 `;
 
 const StyledTabList = styled.div`
@@ -37,23 +53,23 @@ const StyledTabList = styled.div`
     display: flex;
     overflow-x: auto;
     width: calc(100% + 100px);
-    padding-right: 50px;
-    margin-right: -50px;
+    padding-left: 50px;
+    margin-left: -50px;
     margin-bottom: 30px;
   }
   @media (max-width: 480px) {
     width: calc(100% + 50px);
-    padding-right: 25px;
-    margin-right: -25px;
+    padding-left: 25px;
+    margin-left: -25px;
   }
 
   li {
     &:first-of-type {
       @media (max-width: 600px) {
-        margin-right: 50px;
+        margin-left: 50px;
       }
       @media (max-width: 480px) {
-        margin-right: 25px;
+        margin-left: 25px;
       }
     }
     &:last-of-type {
@@ -104,6 +120,7 @@ const StyledHighlight = styled.div`
   position: absolute;
   top: 0;
   right: 0;
+  left: auto;
   z-index: 10;
   width: 2px;
   height: var(--tab-height);
@@ -116,14 +133,16 @@ const StyledHighlight = styled.div`
   @media (max-width: 600px) {
     top: auto;
     bottom: 0;
+    left: 0;
+    right: auto;
     width: 100%;
     max-width: var(--tab-width);
     height: 2px;
-    margin-right: 50px;
+    margin-left: 50px;
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
   }
   @media (max-width: 480px) {
-    margin-right: 25px;
+    margin-left: 25px;
   }
 `;
 
@@ -286,11 +305,38 @@ const Activities = () => {
     }
   };
 
+  const TabsComponent = () => (
+    <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
+      {activitiesData &&
+          activitiesData.map(({ node }, i) => {
+            const { company } = node.frontmatter;
+            return (
+              <StyledTabButton
+                key={i}
+                isActive={activeTabId === i}
+                onClick={() => setActiveTabId(i)}
+                ref={el => (tabs.current[i] = el)}
+                id={`tab-${i}`}
+                role="tab"
+                tabIndex={activeTabId === i ? '0' : '-1'}
+                aria-selected={activeTabId === i ? true : false}
+                aria-controls={`panel-${i}`}>
+                <span>{company}</span>
+              </StyledTabButton>
+            );
+          })}
+      <StyledHighlight activeTabId={activeTabId} />
+    </StyledTabList>
+  );
+
   return (
     <StyledActivitiesSection id="activities" ref={revealContainer}>
       <h2>Where I’ve Contributed</h2>
 
       <div className="inner">
+        <div className="hide-on-desktop">
+          <TabsComponent />
+        </div>
         <StyledTabPanels>
           {activitiesData &&
             activitiesData.map(({ node }, i) => {
@@ -334,28 +380,9 @@ const Activities = () => {
               );
             })}
         </StyledTabPanels>
-
-        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
-          {activitiesData &&
-            activitiesData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
-              return (
-                <StyledTabButton
-                  key={i}
-                  isActive={activeTabId === i}
-                  onClick={() => setActiveTabId(i)}
-                  ref={el => (tabs.current[i] = el)}
-                  id={`tab-${i}`}
-                  role="tab"
-                  tabIndex={activeTabId === i ? '0' : '-1'}
-                  aria-selected={activeTabId === i ? true : false}
-                  aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
-                </StyledTabButton>
-              );
-            })}
-          <StyledHighlight activeTabId={activeTabId} />
-        </StyledTabList>
+        <div className="hide-on-mobile">
+          <TabsComponent />
+        </div>
       </div>
     </StyledActivitiesSection>
   );

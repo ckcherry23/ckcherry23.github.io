@@ -250,7 +250,7 @@ const StyledProject = styled.li`
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
-      opacity: 0.15;
+      opacity: 0.05;
     }
 
     a {
@@ -292,7 +292,7 @@ const StyledProject = styled.li`
       border-radius: var(--border-radius);
 
       @media (max-width: 768px) {
-        object-fit: cover;
+        display: none;
         width: auto;
         height: 100%;
       }
