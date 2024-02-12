@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -231,12 +230,12 @@ const Medium = () => {
         <h2 className="numbered-heading no-decoration" ref={revealTitle}>
           Stories from my journey
         </h2>
-        <Link
+        <a
           className="inline-link medium-link"
-          to="https://medium.com/@charismakausar"
+          href="https://medium.com/@charismakausar"
           ref={revealMediumLink}>
           view my Medium blog
-        </Link>
+        </a>
       </header>
 
       <StyledGrid>

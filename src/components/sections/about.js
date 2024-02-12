@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -26,7 +28,7 @@ const StyledPic = styled.div`
 
   @media (max-width: 768px) {
     margin: 50px auto 0;
-    width: 70%;
+    width: 100%;
   }
 
   .wrapper {
@@ -75,19 +77,56 @@ const StyledPic = styled.div`
       background-color: var(--navy);
       mix-blend-mode: screen;
     }
-
-    &:after {
-      border: 2px solid var(--rose);
-      top: 20px;
-      left: 20px;
-      z-index: -1;
-    }
   }
 `;
 
 const About = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  const IMAGE_OFFSET = 10;
+  const SCALE_FACTOR = 0.06;
+
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const defaultImages = data.allFile.edges
+    .filter(image => {
+      const imageData = image.node.childImageSharp?.gatsbyImageData;
+      if (!imageData) {
+        return false;
+      }
+
+      const imageSrc = imageData.images.fallback.src;
+      const n = imageSrc.lastIndexOf('/');
+      const imageFileName = imageSrc.substring(n + 1);
+
+      return imageFileName.startsWith('me');
+    })
+    .toSorted((a, b) => {
+      const getImageOrder = image => {
+        const imageData = image.node.childImageSharp?.gatsbyImageData;
+        const imageSrc = imageData.images.fallback.src;
+        const n = imageSrc.lastIndexOf('-');
+        const imageOrder = imageSrc.substring(n + 1);
+        return parseInt(imageOrder);
+      };
+
+      return getImageOrder(a) - getImageOrder(b);
+    });
+
+  const [images, setImages] = useState(defaultImages);
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -96,6 +135,14 @@ const About = () => {
 
     sr.reveal(revealContainer.current, srConfig());
   }, []);
+
+  const nextImage = () => {
+    setImages(prevCards => {
+      const newArray = [...prevCards];
+      newArray.unshift(newArray.pop());
+      return newArray;
+    });
+  };
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -128,19 +175,41 @@ const About = () => {
             </p>
           </div>
         </StyledText>
+        <div
+          style={{ position: 'relative', height: '360px', width: '300px' }}
+          className="relative h-60 w-60 md:h-60 md:w-96">
+          {images?.map((image, index) => (
+            <motion.div
+              key={image.node.childImageSharp.gatsbyImageData.images.fallback.src}
+              style={{
+                transformOrigin: 'top center',
+                position: 'absolute',
 
-        <StyledPic>
-          <div className="wrapper">
-            <StaticImage
-              className="img"
-              src="../../images/me.jpg"
-              width={500}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
-            />
-          </div>
-        </StyledPic>
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
+              animate={{
+                top: index * -IMAGE_OFFSET,
+                scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
+                zIndex: images.length - index, //  decrease z-index for the cards that are behind
+              }}
+              onClick={nextImage}>
+              <StyledPic>
+                <div className="wrapper">
+                  <GatsbyImage
+                    className="img"
+                    style={{
+                      height: '360px',
+                    }}
+                    image={image.node.childImageSharp.gatsbyImageData}
+                    alt="Headshot"
+                  />
+                </div>
+              </StyledPic>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </StyledAboutSection>
   );
