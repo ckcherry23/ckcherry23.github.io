@@ -3,7 +3,7 @@ date: '2024-02-30'
 title: 'FolioBoard'
 github: 'https://github.com/ckcherry23/folioboard'
 external: 'https://folio-board.vercel.app/'
-techstack: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Puppeteer', 'Amazon S3', 'Firebase']
+techstack: ['Next.js', 'tRPC', 'Tailwind', 'Supabase', 'Puppeteer', 'Amazon S3', 'Firebase']
 company: 'Personal Project'
 showInProjects: false
 ---

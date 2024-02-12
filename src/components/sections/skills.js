@@ -95,14 +95,14 @@ const Skills = () => {
   ];
   const frameworks = [
     'React',
-    'Vue.js',
+    'Next.js',
+    'Tailwind',
+    'Prisma',
+    'tRPC',
     'Flutter',
     'Supabase',
-    'Firebase',
     'mongoDB',
-    'Prisma',
     'Git',
-    'Tailwind',
     'Figma',
   ];
 
