@@ -2,6 +2,7 @@
 date: '2023-05-27'
 title: 'Scam Sensei'
 github: 'https://github.com/ckcherry23/ScamSensei'
+figma: ''
 external: 'https://youtu.be/WT39w8LUozU'
 techstack: ['Node.js', 'JavaScript', 'Bing AI']
 company: 'HackSingapore 2023'

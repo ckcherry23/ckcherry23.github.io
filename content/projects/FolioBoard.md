@@ -2,6 +2,7 @@
 date: '2024-02-30'
 title: 'FolioBoard'
 github: 'https://github.com/ckcherry23/folioboard'
+figma: ''
 external: 'https://folio-board.vercel.app/'
 techstack: ['Next.js', 'tRPC', 'Tailwind', 'Supabase', 'Puppeteer', 'Amazon S3', 'Firebase']
 company: 'Personal Project'

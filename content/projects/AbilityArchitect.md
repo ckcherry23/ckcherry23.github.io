@@ -2,6 +2,7 @@
 date: '2023-05-14'
 title: 'Ability Architect'
 github: ''
+figma: ''
 external: '/ability_architect.pdf'
 techstack: ['ChatGPT']
 company: 'N-NOVATE X SDG Open Hack 2023'

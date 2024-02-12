@@ -2,6 +2,7 @@
 date: '2022-06-30'
 title: 'Personal Website'
 github: 'https://github.com/ckcherry23/ckcherry23.github.io'
+figma: ''
 external: ''
 techstack: ['Gatsby', 'GraphQL']
 company: 'Personal Project'

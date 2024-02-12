@@ -2,6 +2,7 @@
 date: '2023-05-30'
 title: 'd.AI.rector'
 github: ''
+figma: ''
 external: 'https://www.youtube.com/@d.ai.rector/featured'
 techstack: ['Python', 'TextCortex AI', 'Google TTS', 'Pexels API']
 company: 'Personal Project'

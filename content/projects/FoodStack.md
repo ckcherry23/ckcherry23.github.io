@@ -2,6 +2,7 @@
 date: '2021-08-10'
 title: 'FoodStack'
 github: 'https://github.com/Team-APPetite/FoodStack'
+figma: ''
 external: 'https://youtu.be/i4llenDoj2E'
 techstack: ['Flutter', 'Firebase', 'JavaScript']
 company: 'Orbital 2021'

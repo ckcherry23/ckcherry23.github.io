@@ -2,6 +2,7 @@
 date: '2022-04-10'
 title: 'Reache'
 github: 'https://github.com/AY2122S2-CS2103T-W12-4/tp'
+figma: ''
 external: 'https://youtu.be/M81hh6FKEUU'
 techstack: ['Java', 'Git', 'JUnit']
 company: 'CS2103T Software Engineering'

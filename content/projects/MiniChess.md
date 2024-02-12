@@ -2,6 +2,7 @@
 date: '2022-04-10'
 title: 'Mini Chess Bot'
 github: 'https://github.com/ckcherry23/cs3243-project3'
+figma: ''
 external: ''
 techstack: ['Python']
 company: 'CS3243 Artificial Intelligence'

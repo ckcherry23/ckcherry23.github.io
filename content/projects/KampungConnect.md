@@ -1,7 +1,8 @@
 ---
 date: '2024-05-10'
 title: 'Kampung Connect'
-github: ''
+github: 'https://github.com/GDSC-NUS'
+figma: ''
 external: ''
 techstack: ['Next.js', 'Tailwind', 'Prisma', 'Nest.js']
 company: 'Google Developer Student Club NUS'

@@ -215,6 +215,7 @@ const Projects = () => {
               title
               techstack
               github
+              figma
               external
               company
             }
@@ -248,14 +249,14 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, techstack, company } = frontmatter;
+    const { github, external, title, techstack, company, figma } = frontmatter;
 
     return (
       <div className="project-inner">
         <header>
           <div className="project-top">
             <h3 className="project-title">
-              <a href={external || github} target="_blank" rel="noreferrer">
+              <a href={external || github || figma} target="_blank" rel="noreferrer">
                 {title}
               </a>
               <div className="company-name">{company}</div>
@@ -265,6 +266,11 @@ const Projects = () => {
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
+                </a>
+              )}
+              {figma && (
+                <a href={figma} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                  <Icon name="Figma" />
                 </a>
               )}
               {external && (

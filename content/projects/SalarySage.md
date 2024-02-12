@@ -2,6 +2,7 @@
 date: '2023-09-29'
 title: 'Salary Sage'
 github: 'https://github.com/dexterleng/salary-sage'
+figma: ''
 external: 'https://salary-sage.vercel.app/'
 techstack: ['Next.js', 'Supabase', 'Tailwind', 'OpenAI API']
 company: 'CS3216 Software Product Engineering for Digital Markets'
