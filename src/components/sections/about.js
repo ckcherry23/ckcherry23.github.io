@@ -168,10 +168,10 @@ const About = () => {
               events more efficiently using technology.
             </p>
             <p>
-              Currently, I'm diving deep into the realm of Augmented Reality Smartglasses for my
-              Final Year Project at the <a href="https://www.nus-hci.org/">NUS-HCI Lab</a>. I also
-              tutor part-time as a Teaching Assistant for Software Engineering and Interaction
-              Design.
+              Currently, I'm diving deep into the realm of Augmented Reality smartglasses for my
+              Final Year Project at the <a href="https://www.synteraction.org/">Synteraction Lab</a>
+              . I also tutor part-time as a Teaching Assistant for Software Engineering and
+              Interaction Design.
             </p>
           </div>
         </StyledText>
