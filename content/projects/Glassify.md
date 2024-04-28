@@ -1,12 +1,12 @@
 ---
 date: '2024-05-01'
 title: 'Glassify'
-github: 'https://github.com/vuminhduc796/OHMD-Voicify'
+github: ''
 figma: ''
-external: 'https://dl.acm.org/doi/abs/10.1145/3581998'
-techstack: ['Python', 'OpenAI API', 'Figma']
-company: 'NUS-HCI Lab'
-showInProjects: false
+external: '/glassify.pdf'
+techstack: ['Next.js', 'Tailwind', 'Flask', 'Python', 'OpenAI API', 'Figma']
+company: 'Final Year Project at Synteraction Lab'
+showInProjects: true
 ---
 
 A research project to convert smartphone apps into experiences for Augmented Reality smartglasses.

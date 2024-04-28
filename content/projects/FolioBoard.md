@@ -1,5 +1,5 @@
 ---
-date: '2024-02-30'
+date: '2023-08-23'
 title: 'FolioBoard'
 github: 'https://github.com/ckcherry23/folioboard'
 figma: ''
