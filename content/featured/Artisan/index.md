@@ -8,4 +8,4 @@ external: 'https://www.artisan.land'
 techstack: ['Next.js', 'tRPC', 'Supabase', 'Prisma', 'Tailwind', 'OpenAI API']
 ---
 
-An AI-powered app to generate beautiful marketing and portfolio sites, customize designs and export code in React. Won the Best Project award for 23rd STePS.
+An AI-powered app to generate beautiful marketing and portfolio sites, customize designs and export code in React. Won the Best Project award for 23rd STePS snd the NUS Computing Innovation Prize 2024.
