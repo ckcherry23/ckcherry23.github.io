@@ -146,13 +146,6 @@ const StyledProject = styled.li`
 
   footer {
     width: 100%;
-
-    hr {
-      width: 100%;
-      margin: 0;
-      margin-top: 1rem;
-      background-color: var(--dark-slate);
-    }
   }
 
   .stack-list {
@@ -289,7 +282,6 @@ const Projects = () => {
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
         </header>
         <footer>
-          {/* {techstack && <hr />} */}
           <div className="stack-list">
             {techstack?.map(tech => (
               <div className="stack-icon" key={tech}>

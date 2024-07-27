@@ -88,6 +88,21 @@ const StyledTableContainer = styled.div`
         font-size: var(--fz-xl);
         font-weight: 600;
         line-height: 1.25;
+
+        a {
+          position: static;
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+        }
       }
 
       &.company {
@@ -169,12 +184,15 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const { date, github, external, title, company, techstack } = node.frontmatter;
+                  const { date, github, external, figma, title, company, techstack } =
+                    node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
-                      <td className="title">{title}</td>
+                      <td className="title">
+                        <a href={external || github || figma}>{title}</a>
+                      </td>
 
                       <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
