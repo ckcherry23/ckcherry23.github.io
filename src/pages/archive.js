@@ -35,7 +35,7 @@ const StyledTableContainer = styled.div`
 
     th,
     td {
-      padding: 10px;
+      padding: 12px;
       text-align: left;
 
       &:first-child {
@@ -83,7 +83,6 @@ const StyledTableContainer = styled.div`
       }
 
       &.title {
-        padding-top: 15px;
         padding-right: 20px;
         color: var(--lightest-slate);
         font-size: var(--fz-xl);
