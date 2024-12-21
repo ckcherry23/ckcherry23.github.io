@@ -3,7 +3,7 @@ date: '2024-05-08'
 title: 'Frontend Lead'
 company: 'DSC NUS'
 location: 'Singapore'
-range: 'August 2023 - Present'
+range: 'August 2023 - July 2024'
 url: 'https://dsc.comp.nus.edu.sg/'
 techstack: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma', 'Nest.js']
 ---

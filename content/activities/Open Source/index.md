@@ -3,7 +3,7 @@ date: '2024-04-30'
 title: 'Developer'
 company: 'Open Source'
 location: ''
-range: 'Nov 2022 - Present'
+range: 'Nov 2022 - July 2024'
 url: 'https://github.com/reposense/RepoSense'
 techstack: ['React', 'Vue.js', 'TypeScript', 'Pug', 'Sass', 'Git', 'Java', 'Python']
 ---

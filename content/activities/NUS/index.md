@@ -3,7 +3,7 @@ date: '2023-12-07'
 title: 'Teaching Assistant'
 company: 'NUS'
 location: 'Singapore'
-range: 'May 2022 - Present'
+range: 'May 2022 - July 2024'
 url: 'https://nus.edu.sg/cdtl/professional-development/getting-started/teaching-assistants%27-programme-(tap)'
 techstack: ['Java', 'Flutter', 'Firebase', 'React', 'Figma']
 ---
