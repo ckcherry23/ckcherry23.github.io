@@ -116,12 +116,12 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a Software Engineer and a fresh{' '}
-        <a href="https://www.nus.edu.sg/" target="_blank" rel="noreferrer">
-          NUS
-        </a>{' '}
-        Computer Science grad. <br />I believe in bringing the best user experience to people
-        through innovative software to make their lives easier and happier :)
+        I’m a Software Engineer who loves building fun and meaningful software. Currently, I’m part
+        of{' '}
+        <a href="https://mobbin.com/browse/ios/apps" target="_blank" rel="noreferrer">
+          Mobbin
+        </a>
+        's Product Team.
       </p>
     </>
   );

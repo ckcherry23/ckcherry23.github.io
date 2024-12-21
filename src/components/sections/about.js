@@ -152,8 +152,8 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Charisma and I enjoy creating software products that make a positive impact
-              in people's lives!
+              Hello! I'm Charisma and I enjoy creating software that solves real problems and makes
+              a positive impact.
             </p>
             <p>
               I've built <a href="https://www.artisan.land">Artisan</a>, a landing page and
